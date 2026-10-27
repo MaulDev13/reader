@@ -1,0 +1,4323 @@
+{
+  "folder": "a-regressors-tale-of-cultivation",
+  "label": [
+    "A",
+    "Regressors",
+    "Tale",
+    "Of",
+    "Cultivation"
+  ],
+  "count": 862,
+  "chapters": [
+    {
+      "file": "chapter-1.txt",
+      "chapter": 1,
+      "title": "A Regressor’s Tale of Cultivation - Prologue"
+    },
+    {
+      "file": "chapter-2.txt",
+      "chapter": 2,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 1: Regressors First Day"
+    },
+    {
+      "file": "chapter-3.txt",
+      "chapter": 3,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 2: Scattering Destiny (1)"
+    },
+    {
+      "file": "chapter-4.txt",
+      "chapter": 4,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 3: Scattering Destiny (2)"
+    },
+    {
+      "file": "chapter-5.txt",
+      "chapter": 5,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 4: Director Kim is a Martial Genius (1)"
+    },
+    {
+      "file": "chapter-6.txt",
+      "chapter": 6,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 5: Director Kim is a Martial Genius (2)"
+    },
+    {
+      "file": "chapter-7.txt",
+      "chapter": 7,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 6: 2nd Cycles First Day"
+    },
+    {
+      "file": "chapter-8.txt",
+      "chapter": 8,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 7: Heaven-Sent Talent (1)"
+    },
+    {
+      "file": "chapter-9.txt",
+      "chapter": 9,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 8: Heaven-Sent Talent (2)"
+    },
+    {
+      "file": "chapter-10.txt",
+      "chapter": 10,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 9: Heaven-Sent Talent (3)"
+    },
+    {
+      "file": "chapter-11.txt",
+      "chapter": 11,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 10: Heaven-Sent Talent (4)"
+    },
+    {
+      "file": "chapter-12.txt",
+      "chapter": 12,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 11: Heaven-Sent Talent (5)"
+    },
+    {
+      "file": "chapter-13.txt",
+      "chapter": 13,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 12: 3rd Cycles First Day"
+    },
+    {
+      "file": "chapter-14.txt",
+      "chapter": 14,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 13: Talent Abandoned by the Heavens (1)"
+    },
+    {
+      "file": "chapter-15.txt",
+      "chapter": 15,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 14: Talent Abandoned by the Heavens (2)"
+    },
+    {
+      "file": "chapter-16.txt",
+      "chapter": 16,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 15: Talent Abandoned by the Heavens (3)"
+    },
+    {
+      "file": "chapter-17.txt",
+      "chapter": 17,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 16: Talent Abandoned by the Heavens (4)"
+    },
+    {
+      "file": "chapter-18.txt",
+      "chapter": 18,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 17: 4th Cycles First Day"
+    },
+    {
+      "file": "chapter-19.txt",
+      "chapter": 19,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 18: Peak Master (1)"
+    },
+    {
+      "file": "chapter-20.txt",
+      "chapter": 20,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 19: Peak Master (2)"
+    },
+    {
+      "file": "chapter-21.txt",
+      "chapter": 21,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 20: Peak Master (3)"
+    },
+    {
+      "file": "chapter-22.txt",
+      "chapter": 22,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 21: Peak Master (4)"
+    },
+    {
+      "file": "chapter-23.txt",
+      "chapter": 23,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 22: Refining (1)"
+    },
+    {
+      "file": "chapter-24.txt",
+      "chapter": 24,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 23: Refining (2)"
+    },
+    {
+      "file": "chapter-25.txt",
+      "chapter": 25,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 24: Refining (3)"
+    },
+    {
+      "file": "chapter-26.txt",
+      "chapter": 26,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 25: 5th Cycles First Day"
+    },
+    {
+      "file": "chapter-27.txt",
+      "chapter": 27,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 26: Life (1)"
+    },
+    {
+      "file": "chapter-28.txt",
+      "chapter": 28,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 27: Life (2)"
+    },
+    {
+      "file": "chapter-29.txt",
+      "chapter": 29,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 28: Life (3)"
+    },
+    {
+      "file": "chapter-30.txt",
+      "chapter": 30,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 29: Life (4)"
+    },
+    {
+      "file": "chapter-31.txt",
+      "chapter": 31,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 30: Life (5)"
+    },
+    {
+      "file": "chapter-32.txt",
+      "chapter": 32,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 31: Life (6)"
+    },
+    {
+      "file": "chapter-33.txt",
+      "chapter": 33,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 32: Life (7)"
+    },
+    {
+      "file": "chapter-34.txt",
+      "chapter": 34,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 33: Life (8)"
+    },
+    {
+      "file": "chapter-35.txt",
+      "chapter": 35,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 34: Endless Mountains Beyond Mountains (山外山不盡)"
+    },
+    {
+      "file": "chapter-36.txt",
+      "chapter": 36,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 35: 6th Cycles First Day"
+    },
+    {
+      "file": "chapter-37.txt",
+      "chapter": 37,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 36: Five Energies Converging to the Origin and the Changes that Followed"
+    },
+    {
+      "file": "chapter-38.txt",
+      "chapter": 38,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 37: Cultivator (1)"
+    },
+    {
+      "file": "chapter-39.txt",
+      "chapter": 39,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 38: Cultivator (2)"
+    },
+    {
+      "file": "chapter-40.txt",
+      "chapter": 40,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 39: Cultivator (3)"
+    },
+    {
+      "file": "chapter-41.txt",
+      "chapter": 41,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 40: Cultivator (4)"
+    },
+    {
+      "file": "chapter-42.txt",
+      "chapter": 42,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 41: Qi Refining (1)"
+    },
+    {
+      "file": "chapter-43.txt",
+      "chapter": 43,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 42: Qi Refining (2)"
+    },
+    {
+      "file": "chapter-44.txt",
+      "chapter": 44,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 43: Qi Refining (3)"
+    },
+    {
+      "file": "chapter-45.txt",
+      "chapter": 45,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 44: Qi Refining (4)"
+    },
+    {
+      "file": "chapter-46.txt",
+      "chapter": 46,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 45: Forbidden (1)"
+    },
+    {
+      "file": "chapter-47.txt",
+      "chapter": 47,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 46: Forbidden (2)"
+    },
+    {
+      "file": "chapter-48.txt",
+      "chapter": 48,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 47: Forbidden (3)"
+    },
+    {
+      "file": "chapter-49.txt",
+      "chapter": 49,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 48: Forbidden (4)"
+    },
+    {
+      "file": "chapter-50.txt",
+      "chapter": 50,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 49: Giant Tree"
+    },
+    {
+      "file": "chapter-51.txt",
+      "chapter": 51,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 50: 7th Cycles First Day"
+    },
+    {
+      "file": "chapter-52.txt",
+      "chapter": 52,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 51: Heavens Above (1)"
+    },
+    {
+      "file": "chapter-53.txt",
+      "chapter": 53,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 52: Heavens Above (2)"
+    },
+    {
+      "file": "chapter-54.txt",
+      "chapter": 54,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 53: Heavens Above (3)"
+    },
+    {
+      "file": "chapter-55.txt",
+      "chapter": 55,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 54: Heavenly Thunder (1)"
+    },
+    {
+      "file": "chapter-56.txt",
+      "chapter": 56,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 55: Heavenly Thunder (2)"
+    },
+    {
+      "file": "chapter-57.txt",
+      "chapter": 57,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 56: Heavenly Thunder (3)"
+    },
+    {
+      "file": "chapter-58.txt",
+      "chapter": 58,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 57: Heavenly Thunder (4)"
+    },
+    {
+      "file": "chapter-59.txt",
+      "chapter": 59,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 58: Heavenly Thunder (5)"
+    },
+    {
+      "file": "chapter-60.txt",
+      "chapter": 60,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 59: Heavenly Thunder (6)"
+    },
+    {
+      "file": "chapter-61.txt",
+      "chapter": 61,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 60: 8th Cycles First Day"
+    },
+    {
+      "file": "chapter-62.txt",
+      "chapter": 62,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 61: Violent Storm (1)"
+    },
+    {
+      "file": "chapter-63.txt",
+      "chapter": 63,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 62: Violent Storm (2)"
+    },
+    {
+      "file": "chapter-64.txt",
+      "chapter": 64,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 63: Violent Storm (3)"
+    },
+    {
+      "file": "chapter-65.txt",
+      "chapter": 65,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 64: Violent Storm (4)"
+    },
+    {
+      "file": "chapter-66.txt",
+      "chapter": 66,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 65: Violent Storm (5)"
+    },
+    {
+      "file": "chapter-67.txt",
+      "chapter": 67,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 66: Violent Storm (6)"
+    },
+    {
+      "file": "chapter-68.txt",
+      "chapter": 68,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 67: Violent Storm (7)"
+    },
+    {
+      "file": "chapter-69.txt",
+      "chapter": 69,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 68: Eve (1)"
+    },
+    {
+      "file": "chapter-70.txt",
+      "chapter": 70,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 69: Eve (2)"
+    },
+    {
+      "file": "chapter-71.txt",
+      "chapter": 71,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 70: Eve (3)"
+    },
+    {
+      "file": "chapter-72.txt",
+      "chapter": 72,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 71: Eve (4)"
+    },
+    {
+      "file": "chapter-73.txt",
+      "chapter": 73,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 72: Eve (5)"
+    },
+    {
+      "file": "chapter-74.txt",
+      "chapter": 74,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 73: Eve (6)"
+    },
+    {
+      "file": "chapter-75.txt",
+      "chapter": 75,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 74: Eve (7)"
+    },
+    {
+      "file": "chapter-76.txt",
+      "chapter": 76,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 75: 9th Cycles First Day"
+    },
+    {
+      "file": "chapter-77.txt",
+      "chapter": 77,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 76: Fate (1)"
+    },
+    {
+      "file": "chapter-78.txt",
+      "chapter": 78,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 77: Fate (2)"
+    },
+    {
+      "file": "chapter-79.txt",
+      "chapter": 79,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 78: Fate (3)"
+    },
+    {
+      "file": "chapter-80.txt",
+      "chapter": 80,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 79: Fate (4)"
+    },
+    {
+      "file": "chapter-81.txt",
+      "chapter": 81,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 80: Qi Building"
+    },
+    {
+      "file": "chapter-82.txt",
+      "chapter": 82,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 81: Beyond the Path to Heaven"
+    },
+    {
+      "file": "chapter-83.txt",
+      "chapter": 83,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 82: Martial Artist"
+    },
+    {
+      "file": "chapter-84.txt",
+      "chapter": 84,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 83: Deathbed (1)"
+    },
+    {
+      "file": "chapter-85.txt",
+      "chapter": 85,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 84: Deathbed (2)"
+    },
+    {
+      "file": "chapter-86.txt",
+      "chapter": 86,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 85: Deathbed (3)"
+    },
+    {
+      "file": "chapter-87.txt",
+      "chapter": 87,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 86: Deathbed (4)"
+    },
+    {
+      "file": "chapter-88.txt",
+      "chapter": 88,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 87: Deathbed (5)"
+    },
+    {
+      "file": "chapter-89.txt",
+      "chapter": 89,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 88: Living Flower (1)"
+    },
+    {
+      "file": "chapter-90.txt",
+      "chapter": 90,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 89: Living Flower (2)"
+    },
+    {
+      "file": "chapter-91.txt",
+      "chapter": 91,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 90: Living Flower (3)"
+    },
+    {
+      "file": "chapter-92.txt",
+      "chapter": 92,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 91: Living Flower (4)"
+    },
+    {
+      "file": "chapter-93.txt",
+      "chapter": 93,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 92: 10th Cycles First Day"
+    },
+    {
+      "file": "chapter-94.txt",
+      "chapter": 94,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 93: Lotus (1)"
+    },
+    {
+      "file": "chapter-95.txt",
+      "chapter": 95,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 94: Lotus (2)"
+    },
+    {
+      "file": "chapter-96.txt",
+      "chapter": 96,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 95: Lotus (3)"
+    },
+    {
+      "file": "chapter-97.txt",
+      "chapter": 97,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 96: Lotus (4)"
+    },
+    {
+      "file": "chapter-98.txt",
+      "chapter": 98,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 97: Lotus (5)"
+    },
+    {
+      "file": "chapter-99.txt",
+      "chapter": 99,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 98: Lotus (6)"
+    },
+    {
+      "file": "chapter-100.txt",
+      "chapter": 100,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 99: Lotus (7)"
+    },
+    {
+      "file": "chapter-101.txt",
+      "chapter": 101,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 100: Lotus (8)"
+    },
+    {
+      "file": "chapter-102.txt",
+      "chapter": 102,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 101: Lotus (9)"
+    },
+    {
+      "file": "chapter-103.txt",
+      "chapter": 103,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 102: Lotus (10)"
+    },
+    {
+      "file": "chapter-104.txt",
+      "chapter": 104,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 103: Lotus (11)"
+    },
+    {
+      "file": "chapter-105.txt",
+      "chapter": 105,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 104: Lotus (12)"
+    },
+    {
+      "file": "chapter-106.txt",
+      "chapter": 106,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 105: Lotus (13)"
+    },
+    {
+      "file": "chapter-107.txt",
+      "chapter": 107,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 106: Lotus (14)"
+    },
+    {
+      "file": "chapter-108.txt",
+      "chapter": 108,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 107: Lotus (15)"
+    },
+    {
+      "file": "chapter-109.txt",
+      "chapter": 109,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 108: Lotus (16)"
+    },
+    {
+      "file": "chapter-110.txt",
+      "chapter": 110,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 109: Lotus (17)"
+    },
+    {
+      "file": "chapter-111.txt",
+      "chapter": 111,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 110: Lotus (18)"
+    },
+    {
+      "file": "chapter-112.txt",
+      "chapter": 112,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 111: Lotus (19)"
+    },
+    {
+      "file": "chapter-113.txt",
+      "chapter": 113,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 112: Lotus (20)"
+    },
+    {
+      "file": "chapter-114.txt",
+      "chapter": 114,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 113: What You Trampled On / The Path You Have Tread (1)"
+    },
+    {
+      "file": "chapter-115.txt",
+      "chapter": 115,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 114: What You Trampled On / The Path You Have Tread (2)"
+    },
+    {
+      "file": "chapter-116.txt",
+      "chapter": 116,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 115: What You Trampled On / The Path You Have Tread (3)"
+    },
+    {
+      "file": "chapter-117.txt",
+      "chapter": 117,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 116: What You Trampled On / The Path You Have Tread (4)"
+    },
+    {
+      "file": "chapter-118.txt",
+      "chapter": 118,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 117: What You Trampled On / The Path You Have Tread (5)"
+    },
+    {
+      "file": "chapter-119.txt",
+      "chapter": 119,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 118: What You Trampled On / The Path You Have Tread (6)"
+    },
+    {
+      "file": "chapter-120.txt",
+      "chapter": 120,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 119: What You Trampled On / The Path You Have Tread (7)"
+    },
+    {
+      "file": "chapter-121.txt",
+      "chapter": 121,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 120: What You Trampled On / The Path You Have Tread (9)"
+    },
+    {
+      "file": "chapter-122.txt",
+      "chapter": 122,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 121: What You Trampled On / The Path You Have Tread (9)"
+    },
+    {
+      "file": "chapter-123.txt",
+      "chapter": 123,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 122: What You Trampled On / The Path You Have Tread (10)"
+    },
+    {
+      "file": "chapter-124.txt",
+      "chapter": 124,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 123: What You Trampled On / The Path You Have Tread (11)"
+    },
+    {
+      "file": "chapter-125.txt",
+      "chapter": 125,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 124: What You Trampled On / The Path You Have Tread (12)"
+    },
+    {
+      "file": "chapter-126.txt",
+      "chapter": 126,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 125: What You Trampled On / The Path You Have Tread (13)"
+    },
+    {
+      "file": "chapter-127.txt",
+      "chapter": 127,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 126: What You Trampled On / The Path You Have Tread (14)"
+    },
+    {
+      "file": "chapter-128.txt",
+      "chapter": 128,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 127: What You Trampled On / The Path You Have Tread (15)"
+    },
+    {
+      "file": "chapter-129.txt",
+      "chapter": 129,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 128: What You Trampled On / The Path You Have Tread (16)"
+    },
+    {
+      "file": "chapter-130.txt",
+      "chapter": 130,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 129: What You Trampled On / The Path You Have Tread (17)"
+    },
+    {
+      "file": "chapter-131.txt",
+      "chapter": 131,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 130: 11th Cycles First Day"
+    },
+    {
+      "file": "chapter-132.txt",
+      "chapter": 132,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 131: Mad Lords Grasp (1)"
+    },
+    {
+      "file": "chapter-133.txt",
+      "chapter": 133,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 132: Mad Lords Grasp (2)"
+    },
+    {
+      "file": "chapter-134.txt",
+      "chapter": 134,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 133: 12th Cycles First Day"
+    },
+    {
+      "file": "chapter-135.txt",
+      "chapter": 135,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 134: Baihui (1)"
+    },
+    {
+      "file": "chapter-136.txt",
+      "chapter": 136,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 135: Baihui (2)"
+    },
+    {
+      "file": "chapter-137.txt",
+      "chapter": 137,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 136: Baihui (3)"
+    },
+    {
+      "file": "chapter-138.txt",
+      "chapter": 138,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 137: Baihui (4)"
+    },
+    {
+      "file": "chapter-139.txt",
+      "chapter": 139,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 138: Baihui (5)"
+    },
+    {
+      "file": "chapter-140.txt",
+      "chapter": 140,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 139: Ascension"
+    },
+    {
+      "file": "chapter-141.txt",
+      "chapter": 141,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 140: 13th Cycles First Day"
+    },
+    {
+      "file": "chapter-142.txt",
+      "chapter": 142,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 141: Madman (1)"
+    },
+    {
+      "file": "chapter-143.txt",
+      "chapter": 143,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 142: Madman (2)"
+    },
+    {
+      "file": "chapter-144.txt",
+      "chapter": 144,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 142: Madman (3)"
+    },
+    {
+      "file": "chapter-145.txt",
+      "chapter": 145,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 144: Madman (4)"
+    },
+    {
+      "file": "chapter-146.txt",
+      "chapter": 146,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 145: Madman (5)"
+    },
+    {
+      "file": "chapter-147.txt",
+      "chapter": 147,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 146: Yeons Yeon (1)"
+    },
+    {
+      "file": "chapter-148.txt",
+      "chapter": 148,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 147: Yeons Yeon (2)"
+    },
+    {
+      "file": "chapter-149.txt",
+      "chapter": 149,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 148: Yeons Yeon (3)"
+    },
+    {
+      "file": "chapter-150.txt",
+      "chapter": 150,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 149: 14th Cycles First Day"
+    },
+    {
+      "file": "chapter-151.txt",
+      "chapter": 151,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 150: Azure Heaven Creation Sect (1)"
+    },
+    {
+      "file": "chapter-152.txt",
+      "chapter": 152,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 151: Azure Heaven Creation Sect (2)"
+    },
+    {
+      "file": "chapter-153.txt",
+      "chapter": 153,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 152: Azure Heaven Creation Sect (3)"
+    },
+    {
+      "file": "chapter-154.txt",
+      "chapter": 154,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 153: Azure Heaven Creation Sect (4)"
+    },
+    {
+      "file": "chapter-155.txt",
+      "chapter": 155,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 154: Azure Heaven Creation Sect (5)"
+    },
+    {
+      "file": "chapter-156.txt",
+      "chapter": 156,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 155: Masters Grace (1)"
+    },
+    {
+      "file": "chapter-157.txt",
+      "chapter": 157,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 156: Masters Grace (2)"
+    },
+    {
+      "file": "chapter-158.txt",
+      "chapter": 158,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 157: Masters Grace (3)"
+    },
+    {
+      "file": "chapter-159.txt",
+      "chapter": 159,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 158: Masters Grace (4)"
+    },
+    {
+      "file": "chapter-160.txt",
+      "chapter": 160,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 159: Masters Grace (5)"
+    },
+    {
+      "file": "chapter-161.txt",
+      "chapter": 161,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 160: Masters Grace (6)"
+    },
+    {
+      "file": "chapter-162.txt",
+      "chapter": 162,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 161: Masters Grace (7)"
+    },
+    {
+      "file": "chapter-163.txt",
+      "chapter": 163,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 162: Drastic Change (1)"
+    },
+    {
+      "file": "chapter-164.txt",
+      "chapter": 164,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 163: Drastic Change (2)"
+    },
+    {
+      "file": "chapter-165.txt",
+      "chapter": 165,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 164: Drastic Change (3)"
+    },
+    {
+      "file": "chapter-166.txt",
+      "chapter": 166,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 165: Drastic Change (4)"
+    },
+    {
+      "file": "chapter-167.txt",
+      "chapter": 167,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 166: Drastic Change (5)"
+    },
+    {
+      "file": "chapter-168.txt",
+      "chapter": 168,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 167: Those That are Lost (1)"
+    },
+    {
+      "file": "chapter-169.txt",
+      "chapter": 169,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 168: Those That are Lost (2)"
+    },
+    {
+      "file": "chapter-170.txt",
+      "chapter": 170,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 169: Those That are Lost (3)"
+    },
+    {
+      "file": "chapter-171.txt",
+      "chapter": 171,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 170: Those That are Lost (4)"
+    },
+    {
+      "file": "chapter-172.txt",
+      "chapter": 172,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 171: Those That are Lost (5)"
+    },
+    {
+      "file": "chapter-173.txt",
+      "chapter": 173,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 172: Even If This Place Is Hell (1)"
+    },
+    {
+      "file": "chapter-174.txt",
+      "chapter": 174,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 173: Even If This Place Is Hell (2)"
+    },
+    {
+      "file": "chapter-175.txt",
+      "chapter": 175,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 174: Even If This Place Is Hell (3)"
+    },
+    {
+      "file": "chapter-176.txt",
+      "chapter": 176,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 175: Even If This Place Is Hell (4)"
+    },
+    {
+      "file": "chapter-177.txt",
+      "chapter": 177,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 176: Masters Grace (8)"
+    },
+    {
+      "file": "chapter-178.txt",
+      "chapter": 178,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 177: Masters Grace (9)"
+    },
+    {
+      "file": "chapter-179.txt",
+      "chapter": 179,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 178: Masters Grace (10)"
+    },
+    {
+      "file": "chapter-180.txt",
+      "chapter": 180,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 179: Masters Grace (11)"
+    },
+    {
+      "file": "chapter-181.txt",
+      "chapter": 181,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 180: 15th Cycles First Day"
+    },
+    {
+      "file": "chapter-182.txt",
+      "chapter": 182,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 181: The Tribe of the Earth (1)"
+    },
+    {
+      "file": "chapter-183.txt",
+      "chapter": 183,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 182: The Tribe of the Earth (2)"
+    },
+    {
+      "file": "chapter-184.txt",
+      "chapter": 184,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 183: The Tribe of the Earth (3)"
+    },
+    {
+      "file": "chapter-185.txt",
+      "chapter": 185,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 184: The Tribe of the Earth (4)"
+    },
+    {
+      "file": "chapter-186.txt",
+      "chapter": 186,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 185: The Tribe of the Earth (5)"
+    },
+    {
+      "file": "chapter-187.txt",
+      "chapter": 187,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 186: The Tribe of the Earth (6)"
+    },
+    {
+      "file": "chapter-188.txt",
+      "chapter": 188,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 187: The Tribe of the Earth (7)"
+    },
+    {
+      "file": "chapter-189.txt",
+      "chapter": 189,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 188: The Tribe of the Earth (8)"
+    },
+    {
+      "file": "chapter-190.txt",
+      "chapter": 190,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 189: The Tribe of the Earth (9)"
+    },
+    {
+      "file": "chapter-191.txt",
+      "chapter": 191,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 190: The One With a Name (1)"
+    },
+    {
+      "file": "chapter-192.txt",
+      "chapter": 192,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 191: The One With a Name (2)"
+    },
+    {
+      "file": "chapter-193.txt",
+      "chapter": 193,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 192: The One With a Name (3)"
+    },
+    {
+      "file": "chapter-194.txt",
+      "chapter": 194,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 193: Betrayal (1)"
+    },
+    {
+      "file": "chapter-195.txt",
+      "chapter": 195,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 194: Betrayal (2)"
+    },
+    {
+      "file": "chapter-196.txt",
+      "chapter": 196,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 195: Betrayal (3)"
+    },
+    {
+      "file": "chapter-197.txt",
+      "chapter": 197,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 196: Betrayal (4)"
+    },
+    {
+      "file": "chapter-198.txt",
+      "chapter": 198,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 197: Betrayal (5)"
+    },
+    {
+      "file": "chapter-199.txt",
+      "chapter": 199,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 198: Betrayal (6)"
+    },
+    {
+      "file": "chapter-200.txt",
+      "chapter": 200,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 199: Betrayal (7)"
+    },
+    {
+      "file": "chapter-201.txt",
+      "chapter": 201,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 200: Betrayal (8)"
+    },
+    {
+      "file": "chapter-202.txt",
+      "chapter": 202,
+      "title": "A Regressor’s Tale of Cultivation - Author's Q&A (1-2-3)"
+    },
+    {
+      "file": "chapter-203.txt",
+      "chapter": 203,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 201: Betrayal (9)"
+    },
+    {
+      "file": "chapter-204.txt",
+      "chapter": 204,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 202: Shattered Heart (1)"
+    },
+    {
+      "file": "chapter-205.txt",
+      "chapter": 205,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 203: Shattered Heart (2)"
+    },
+    {
+      "file": "chapter-206.txt",
+      "chapter": 206,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 204: Shattered Heart (3)"
+    },
+    {
+      "file": "chapter-207.txt",
+      "chapter": 207,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 205: Shattered Heart (4)"
+    },
+    {
+      "file": "chapter-208.txt",
+      "chapter": 208,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 206: Shattered Heart (5)"
+    },
+    {
+      "file": "chapter-209.txt",
+      "chapter": 209,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 207: Lightning Flash (1)"
+    },
+    {
+      "file": "chapter-210.txt",
+      "chapter": 210,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 208: Lightning Flash (2)"
+    },
+    {
+      "file": "chapter-211.txt",
+      "chapter": 211,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 209: Lightning Flash (3)"
+    },
+    {
+      "file": "chapter-212.txt",
+      "chapter": 212,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 210: Lightning Flash (4)"
+    },
+    {
+      "file": "chapter-213.txt",
+      "chapter": 213,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 211 - Lightning Flash (5)"
+    },
+    {
+      "file": "chapter-214.txt",
+      "chapter": 214,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 212: The Clown and the Performance (1)"
+    },
+    {
+      "file": "chapter-215.txt",
+      "chapter": 215,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 213: The Clown and the Performance (2)"
+    },
+    {
+      "file": "chapter-216.txt",
+      "chapter": 216,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 214: The Clown and the Performance (3)"
+    },
+    {
+      "file": "chapter-217.txt",
+      "chapter": 217,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 215: The Clown and the Performance (4)"
+    },
+    {
+      "file": "chapter-218.txt",
+      "chapter": 218,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 216: The Clown and the Performance (5)"
+    },
+    {
+      "file": "chapter-219.txt",
+      "chapter": 219,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 217: The Clown and the Performance (6)"
+    },
+    {
+      "file": "chapter-220.txt",
+      "chapter": 220,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 218: The Clown and the Performance (7)"
+    },
+    {
+      "file": "chapter-221.txt",
+      "chapter": 221,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 219: After the Performance (1)"
+    },
+    {
+      "file": "chapter-222.txt",
+      "chapter": 222,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 220: After the Performance (2)"
+    },
+    {
+      "file": "chapter-223.txt",
+      "chapter": 223,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 221: After the Performance (3)"
+    },
+    {
+      "file": "chapter-224.txt",
+      "chapter": 224,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 222: 17th Cycle's First Day"
+    },
+    {
+      "file": "chapter-225.txt",
+      "chapter": 225,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 223: Black Snake (1)"
+    },
+    {
+      "file": "chapter-226.txt",
+      "chapter": 226,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 224: Black Snake (2)"
+    },
+    {
+      "file": "chapter-227.txt",
+      "chapter": 227,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 225: Black Snake (3)"
+    },
+    {
+      "file": "chapter-228.txt",
+      "chapter": 228,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 226: Black Snake (4)"
+    },
+    {
+      "file": "chapter-229.txt",
+      "chapter": 229,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 227: Black Snake (5)"
+    },
+    {
+      "file": "chapter-230.txt",
+      "chapter": 230,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 228: Black Snake (6)"
+    },
+    {
+      "file": "chapter-231.txt",
+      "chapter": 231,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 229: Black Snake (7)"
+    },
+    {
+      "file": "chapter-232.txt",
+      "chapter": 232,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 230: Black Flash (8)"
+    },
+    {
+      "file": "chapter-233.txt",
+      "chapter": 233,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 231: Black Flash (9)"
+    },
+    {
+      "file": "chapter-234.txt",
+      "chapter": 234,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 232: Black Snake (10)"
+    },
+    {
+      "file": "chapter-235.txt",
+      "chapter": 235,
+      "title": "A Regressor’s Tale of Cultivation - Author's Q&A (4)"
+    },
+    {
+      "file": "chapter-236.txt",
+      "chapter": 236,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 233: What Is A Human (1)"
+    },
+    {
+      "file": "chapter-237.txt",
+      "chapter": 237,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 234: What Is A Human (2)"
+    },
+    {
+      "file": "chapter-238.txt",
+      "chapter": 238,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 235: What Is A Human (3)"
+    },
+    {
+      "file": "chapter-239.txt",
+      "chapter": 239,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 236: What Is A Human (4)"
+    },
+    {
+      "file": "chapter-240.txt",
+      "chapter": 240,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 237: What Is A Human (5)"
+    },
+    {
+      "file": "chapter-241.txt",
+      "chapter": 241,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 238: What Is A Human (6)"
+    },
+    {
+      "file": "chapter-242.txt",
+      "chapter": 242,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 239: What Is A Human (7)"
+    },
+    {
+      "file": "chapter-243.txt",
+      "chapter": 243,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 240: What Is A Human (8)"
+    },
+    {
+      "file": "chapter-244.txt",
+      "chapter": 244,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 241: What Is A Human (9)"
+    },
+    {
+      "file": "chapter-245.txt",
+      "chapter": 245,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 242: What Is A Human (10)"
+    },
+    {
+      "file": "chapter-246.txt",
+      "chapter": 246,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 243: What Is A Human (11)"
+    },
+    {
+      "file": "chapter-247.txt",
+      "chapter": 247,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 244: Multi-faceted (1)"
+    },
+    {
+      "file": "chapter-248.txt",
+      "chapter": 248,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 245: Multi-faceted (2)"
+    },
+    {
+      "file": "chapter-249.txt",
+      "chapter": 249,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 246: Multi-faceted (3)"
+    },
+    {
+      "file": "chapter-250.txt",
+      "chapter": 250,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 247: Multi-faceted (4)"
+    },
+    {
+      "file": "chapter-251.txt",
+      "chapter": 251,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 248: Multi-faceted (5)"
+    },
+    {
+      "file": "chapter-252.txt",
+      "chapter": 252,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 249: Heavenly Tribulation (1)"
+    },
+    {
+      "file": "chapter-253.txt",
+      "chapter": 253,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 250: Heavenly Tribulation (2)"
+    },
+    {
+      "file": "chapter-254.txt",
+      "chapter": 254,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 251: Heavenly Tribulation (3)"
+    },
+    {
+      "file": "chapter-255.txt",
+      "chapter": 255,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 252: Heavenly Tribulation (4)"
+    },
+    {
+      "file": "chapter-256.txt",
+      "chapter": 256,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 253: Heavenly Tribulation (5)"
+    },
+    {
+      "file": "chapter-257.txt",
+      "chapter": 257,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 254: Heavenly Tribulation (6)"
+    },
+    {
+      "file": "chapter-258.txt",
+      "chapter": 258,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 255: Heavenly Tribulation (7)"
+    },
+    {
+      "file": "chapter-259.txt",
+      "chapter": 259,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 256: Heavenly Tribulation (8)"
+    },
+    {
+      "file": "chapter-260.txt",
+      "chapter": 260,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 257: Heavenly Tribulation (9)"
+    },
+    {
+      "file": "chapter-261.txt",
+      "chapter": 261,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 258: Heavenly Tribulation (10)"
+    },
+    {
+      "file": "chapter-262.txt",
+      "chapter": 262,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 259: Heavenly Tribulation (11)"
+    },
+    {
+      "file": "chapter-263.txt",
+      "chapter": 263,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 260: Heavenly Tribulation (12)"
+    },
+    {
+      "file": "chapter-264.txt",
+      "chapter": 264,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 261: Tribulating Heavens (1)"
+    },
+    {
+      "file": "chapter-265.txt",
+      "chapter": 265,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 262: Tribulating Heavens (2)"
+    },
+    {
+      "file": "chapter-266.txt",
+      "chapter": 266,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 263: Tribulating Heavens (3)"
+    },
+    {
+      "file": "chapter-267.txt",
+      "chapter": 267,
+      "title": "A Regressor’s Tale of Cultivation - Author's Q&A (5)"
+    },
+    {
+      "file": "chapter-268.txt",
+      "chapter": 268,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 264: Tribulating Heavens (4)"
+    },
+    {
+      "file": "chapter-269.txt",
+      "chapter": 269,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 265: Tribulating Heavens (5)"
+    },
+    {
+      "file": "chapter-270.txt",
+      "chapter": 270,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 266: Tribulating Heavens (6)"
+    },
+    {
+      "file": "chapter-271.txt",
+      "chapter": 271,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 267: Tribulating Heavens (7)"
+    },
+    {
+      "file": "chapter-272.txt",
+      "chapter": 272,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 268: Tribulating Heavens (8)"
+    },
+    {
+      "file": "chapter-273.txt",
+      "chapter": 273,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 269: Heavenly Being Stage (天人期)"
+    },
+    {
+      "file": "chapter-274.txt",
+      "chapter": 274,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 270: Pillar (1)"
+    },
+    {
+      "file": "chapter-275.txt",
+      "chapter": 275,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 271: Pillar (2)"
+    },
+    {
+      "file": "chapter-276.txt",
+      "chapter": 276,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 272: Pillar (3)"
+    },
+    {
+      "file": "chapter-277.txt",
+      "chapter": 277,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 273: Pillar (4)"
+    },
+    {
+      "file": "chapter-278.txt",
+      "chapter": 278,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 274: I Saw (1)"
+    },
+    {
+      "file": "chapter-279.txt",
+      "chapter": 279,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 275: I Saw (2)"
+    },
+    {
+      "file": "chapter-280.txt",
+      "chapter": 280,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 276: I Saw It (3)"
+    },
+    {
+      "file": "chapter-281.txt",
+      "chapter": 281,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 277: I Saw (4)"
+    },
+    {
+      "file": "chapter-282.txt",
+      "chapter": 282,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 278: Back to the Middle Realm"
+    },
+    {
+      "file": "chapter-283.txt",
+      "chapter": 283,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 279: Ascension (2)"
+    },
+    {
+      "file": "chapter-284.txt",
+      "chapter": 284,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 280: Grand Cultivators Power"
+    },
+    {
+      "file": "chapter-285.txt",
+      "chapter": 285,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 281: 18th Cycles First Day"
+    },
+    {
+      "file": "chapter-286.txt",
+      "chapter": 286,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 282: Sword Ghost"
+    },
+    {
+      "file": "chapter-287.txt",
+      "chapter": 287,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 283: Hermit"
+    },
+    {
+      "file": "chapter-288.txt",
+      "chapter": 288,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 284: My Name Is (1)"
+    },
+    {
+      "file": "chapter-289.txt",
+      "chapter": 289,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 285: My Name Is (2)"
+    },
+    {
+      "file": "chapter-290.txt",
+      "chapter": 290,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 286: My Name Is (3)"
+    },
+    {
+      "file": "chapter-291.txt",
+      "chapter": 291,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 287: My Name Is (4)"
+    },
+    {
+      "file": "chapter-292.txt",
+      "chapter": 292,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 288: My Name Is (5)"
+    },
+    {
+      "file": "chapter-293.txt",
+      "chapter": 293,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 289: My Name Is (6)"
+    },
+    {
+      "file": "chapter-294.txt",
+      "chapter": 294,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 290: My Name Is (7)"
+    },
+    {
+      "file": "chapter-295.txt",
+      "chapter": 295,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 291: Avenger (1)"
+    },
+    {
+      "file": "chapter-296.txt",
+      "chapter": 296,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 292: Avenger (2)"
+    },
+    {
+      "file": "chapter-297.txt",
+      "chapter": 297,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 293: Avenger (3)"
+    },
+    {
+      "file": "chapter-298.txt",
+      "chapter": 298,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 294: Avenger (4)"
+    },
+    {
+      "file": "chapter-299.txt",
+      "chapter": 299,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 295: Her (1)"
+    },
+    {
+      "file": "chapter-300.txt",
+      "chapter": 300,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 296: Her (2)"
+    },
+    {
+      "file": "chapter-301.txt",
+      "chapter": 301,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 297: Her (3)"
+    },
+    {
+      "file": "chapter-302.txt",
+      "chapter": 302,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 298: Taenghwa (幀畫)"
+    },
+    {
+      "file": "chapter-303.txt",
+      "chapter": 303,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 299: Protection (護) (1)"
+    },
+    {
+      "file": "chapter-304.txt",
+      "chapter": 304,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 300: Protection (護) (2)"
+    },
+    {
+      "file": "chapter-305.txt",
+      "chapter": 305,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 301: Protection (護) (3)"
+    },
+    {
+      "file": "chapter-306.txt",
+      "chapter": 306,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 302: Protection (護) (4)"
+    },
+    {
+      "file": "chapter-307.txt",
+      "chapter": 307,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 303: Protection (5)Kang Min-hee didnt have a father."
+    },
+    {
+      "file": "chapter-308.txt",
+      "chapter": 308,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 304: Protection (護) (6)"
+    },
+    {
+      "file": "chapter-309.txt",
+      "chapter": 309,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 305: Protection (護) (7)"
+    },
+    {
+      "file": "chapter-310.txt",
+      "chapter": 310,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 306: For Seo, Towards Seo (1)"
+    },
+    {
+      "file": "chapter-311.txt",
+      "chapter": 311,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 307: For Seo, Towards Seo (2)"
+    },
+    {
+      "file": "chapter-312.txt",
+      "chapter": 312,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 308: For Seo, Towards Seo (3)"
+    },
+    {
+      "file": "chapter-313.txt",
+      "chapter": 313,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 309: For Seo, Towards Seo (4)"
+    },
+    {
+      "file": "chapter-314.txt",
+      "chapter": 314,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 310: For Seo, Towards Seo (5)"
+    },
+    {
+      "file": "chapter-315.txt",
+      "chapter": 315,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 311: Have You Been Well (1)"
+    },
+    {
+      "file": "chapter-316.txt",
+      "chapter": 316,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 312: Have You Been Well (2)"
+    },
+    {
+      "file": "chapter-317.txt",
+      "chapter": 317,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 313: Have You Been Well? (3)"
+    },
+    {
+      "file": "chapter-318.txt",
+      "chapter": 318,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 314: Have You Been Well? (4)"
+    },
+    {
+      "file": "chapter-319.txt",
+      "chapter": 319,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 315: Not A Lord (君) (1)"
+    },
+    {
+      "file": "chapter-320.txt",
+      "chapter": 320,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 316: Not A Lord (2)"
+    },
+    {
+      "file": "chapter-321.txt",
+      "chapter": 321,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 317: Not A Lord (3)"
+    },
+    {
+      "file": "chapter-322.txt",
+      "chapter": 322,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 318: Not A Lord (4)"
+    },
+    {
+      "file": "chapter-323.txt",
+      "chapter": 323,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 319: Farewell (1)"
+    },
+    {
+      "file": "chapter-324.txt",
+      "chapter": 324,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 320: Farewell (2)"
+    },
+    {
+      "file": "chapter-325.txt",
+      "chapter": 325,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 321: Farewell (3)"
+    },
+    {
+      "file": "chapter-326.txt",
+      "chapter": 326,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 322: Farewell (4)"
+    },
+    {
+      "file": "chapter-327.txt",
+      "chapter": 327,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 323: Farewell (5)"
+    },
+    {
+      "file": "chapter-328.txt",
+      "chapter": 328,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 324: Farewell (6)"
+    },
+    {
+      "file": "chapter-329.txt",
+      "chapter": 329,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 325: Farewell (7)"
+    },
+    {
+      "file": "chapter-330.txt",
+      "chapter": 330,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 326: 19th Cycles First Day"
+    },
+    {
+      "file": "chapter-331.txt",
+      "chapter": 331,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 327: Axis (1)"
+    },
+    {
+      "file": "chapter-332.txt",
+      "chapter": 332,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 328: Axis (2)"
+    },
+    {
+      "file": "chapter-333.txt",
+      "chapter": 333,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 329: Axis (3)"
+    },
+    {
+      "file": "chapter-334.txt",
+      "chapter": 334,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 330: Axis (4)"
+    },
+    {
+      "file": "chapter-335.txt",
+      "chapter": 335,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 331: Axis (5)"
+    },
+    {
+      "file": "chapter-336.txt",
+      "chapter": 336,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 332: Old Monsters Rampage (1)"
+    },
+    {
+      "file": "chapter-337.txt",
+      "chapter": 337,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 333: Old Monsters Rampage (2)"
+    },
+    {
+      "file": "chapter-338.txt",
+      "chapter": 338,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 334: Old Monsters Rampage (3)"
+    },
+    {
+      "file": "chapter-339.txt",
+      "chapter": 339,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 335: Old Monsters Rampage (4)"
+    },
+    {
+      "file": "chapter-340.txt",
+      "chapter": 340,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 336: Old Monsters Rampage (5)"
+    },
+    {
+      "file": "chapter-341.txt",
+      "chapter": 341,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 337: Old Monster’s Rampage (6)"
+    },
+    {
+      "file": "chapter-342.txt",
+      "chapter": 342,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 338: Old Monsters Rampage (7)"
+    },
+    {
+      "file": "chapter-343.txt",
+      "chapter": 343,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 339: The Deceased (1)"
+    },
+    {
+      "file": "chapter-344.txt",
+      "chapter": 344,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 240: The Deceased (2)"
+    },
+    {
+      "file": "chapter-345.txt",
+      "chapter": 345,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 341: The Deceased (3)"
+    },
+    {
+      "file": "chapter-346.txt",
+      "chapter": 346,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 342: The Deceased (4)"
+    },
+    {
+      "file": "chapter-347.txt",
+      "chapter": 347,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 343: The Deceased (5)"
+    },
+    {
+      "file": "chapter-348.txt",
+      "chapter": 348,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 344: The Deceased (6)"
+    },
+    {
+      "file": "chapter-349.txt",
+      "chapter": 349,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 345: The Deceased (7)"
+    },
+    {
+      "file": "chapter-350.txt",
+      "chapter": 350,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 346: The Deceased (8)"
+    },
+    {
+      "file": "chapter-351.txt",
+      "chapter": 351,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 347: The Deceased (9)"
+    },
+    {
+      "file": "chapter-352.txt",
+      "chapter": 352,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 348: Devilish Cult (1)"
+    },
+    {
+      "file": "chapter-353.txt",
+      "chapter": 353,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 349: Devilish Cult (2)"
+    },
+    {
+      "file": "chapter-354.txt",
+      "chapter": 354,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 350: Devilish Cult (3)"
+    },
+    {
+      "file": "chapter-355.txt",
+      "chapter": 355,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 351: Devilish Cult (4)"
+    },
+    {
+      "file": "chapter-356.txt",
+      "chapter": 356,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 352: Devilish Cult (5)"
+    },
+    {
+      "file": "chapter-357.txt",
+      "chapter": 357,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 353: Devilish Cult (6)"
+    },
+    {
+      "file": "chapter-358.txt",
+      "chapter": 358,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 354: Devilish Cult (7)"
+    },
+    {
+      "file": "chapter-359.txt",
+      "chapter": 359,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 355: Earth Axis (地軸)"
+    },
+    {
+      "file": "chapter-360.txt",
+      "chapter": 360,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 356: Ancient Force Realm (古力界)"
+    },
+    {
+      "file": "chapter-361.txt",
+      "chapter": 361,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 357: Is It Not A Joy To Have Friends Come From Afar? (1)"
+    },
+    {
+      "file": "chapter-362.txt",
+      "chapter": 362,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 358: Is It Not A Joy To Have Friends Come From Afar? (2)"
+    },
+    {
+      "file": "chapter-363.txt",
+      "chapter": 363,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 359: Is It Not A Joy To Have Friends Come From Afar? (3)"
+    },
+    {
+      "file": "chapter-364.txt",
+      "chapter": 364,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 360: Is It Not A Joy To Have Friends Come From Afar? (4)"
+    },
+    {
+      "file": "chapter-365.txt",
+      "chapter": 365,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 361: Is It Not A Joy To Have Friends Come From Afar? (5)"
+    },
+    {
+      "file": "chapter-366.txt",
+      "chapter": 366,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 362: Is It Not A Joy To Have Friends Come From Afar? (6)"
+    },
+    {
+      "file": "chapter-367.txt",
+      "chapter": 367,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 363: Is It Not A Joy To Have Friends Come From Afar? (7)"
+    },
+    {
+      "file": "chapter-368.txt",
+      "chapter": 368,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 364: Holding Hands (1)"
+    },
+    {
+      "file": "chapter-369.txt",
+      "chapter": 369,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 365: Holding Hands (2)"
+    },
+    {
+      "file": "chapter-370.txt",
+      "chapter": 370,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 366: Holding Hands (3)"
+    },
+    {
+      "file": "chapter-371.txt",
+      "chapter": 371,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 367: Holding Hands (4)"
+    },
+    {
+      "file": "chapter-372.txt",
+      "chapter": 372,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 368: Holding Hands (5)"
+    },
+    {
+      "file": "chapter-373.txt",
+      "chapter": 373,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 369: Holding Hands (6)"
+    },
+    {
+      "file": "chapter-374.txt",
+      "chapter": 374,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 370: Holding Hands (7)"
+    },
+    {
+      "file": "chapter-375.txt",
+      "chapter": 375,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 371: At The Sea (1)"
+    },
+    {
+      "file": "chapter-376.txt",
+      "chapter": 376,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 372: At The Sea (2)"
+    },
+    {
+      "file": "chapter-377.txt",
+      "chapter": 377,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 373: At The Sea (3)"
+    },
+    {
+      "file": "chapter-378.txt",
+      "chapter": 378,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 374: At The Sea (4)"
+    },
+    {
+      "file": "chapter-379.txt",
+      "chapter": 379,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 375: At The Sea (5)"
+    },
+    {
+      "file": "chapter-380.txt",
+      "chapter": 380,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 376: At The Sea (6)"
+    },
+    {
+      "file": "chapter-381.txt",
+      "chapter": 381,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 377: With Everyone (1)"
+    },
+    {
+      "file": "chapter-382.txt",
+      "chapter": 382,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 378: With Everyone (2)"
+    },
+    {
+      "file": "chapter-383.txt",
+      "chapter": 383,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 379: With Everyone (3)"
+    },
+    {
+      "file": "chapter-384.txt",
+      "chapter": 384,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 380: With Everyone (4)"
+    },
+    {
+      "file": "chapter-385.txt",
+      "chapter": 385,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 381: With Everyone (5)"
+    },
+    {
+      "file": "chapter-386.txt",
+      "chapter": 386,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 382: With Everyone (6)"
+    },
+    {
+      "file": "chapter-387.txt",
+      "chapter": 387,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 383: Salt (1)"
+    },
+    {
+      "file": "chapter-388.txt",
+      "chapter": 388,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 384: Salt (2)"
+    },
+    {
+      "file": "chapter-389.txt",
+      "chapter": 389,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 385: Salt (3)"
+    },
+    {
+      "file": "chapter-390.txt",
+      "chapter": 390,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 386: Salt (4)"
+    },
+    {
+      "file": "chapter-391.txt",
+      "chapter": 391,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 387: Salt (5)"
+    },
+    {
+      "file": "chapter-392.txt",
+      "chapter": 392,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 388: Salt (6)"
+    },
+    {
+      "file": "chapter-393.txt",
+      "chapter": 393,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 389: Drink (1)"
+    },
+    {
+      "file": "chapter-394.txt",
+      "chapter": 394,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 390: Drink (2)"
+    },
+    {
+      "file": "chapter-395.txt",
+      "chapter": 395,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 391: Drink (3)"
+    },
+    {
+      "file": "chapter-396.txt",
+      "chapter": 396,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 392: Drink (4)"
+    },
+    {
+      "file": "chapter-397.txt",
+      "chapter": 397,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 393: Drink (5)"
+    },
+    {
+      "file": "chapter-398.txt",
+      "chapter": 398,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 394: Drink (6)"
+    },
+    {
+      "file": "chapter-399.txt",
+      "chapter": 399,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 395: Drink (7)"
+    },
+    {
+      "file": "chapter-400.txt",
+      "chapter": 400,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 396: With The Wind (1)"
+    },
+    {
+      "file": "chapter-401.txt",
+      "chapter": 401,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 397: With The Wind (2)"
+    },
+    {
+      "file": "chapter-402.txt",
+      "chapter": 402,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 398: With The Wind (3)"
+    },
+    {
+      "file": "chapter-403.txt",
+      "chapter": 403,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 399: With The Wind (4)"
+    },
+    {
+      "file": "chapter-404.txt",
+      "chapter": 404,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 400: With The Wind (5)"
+    },
+    {
+      "file": "chapter-405.txt",
+      "chapter": 405,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 401: With The Wind (6)"
+    },
+    {
+      "file": "chapter-406.txt",
+      "chapter": 406,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 402: With The Wind (7)"
+    },
+    {
+      "file": "chapter-407.txt",
+      "chapter": 407,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 403: With The Wind/"
+    },
+    {
+      "file": "chapter-408.txt",
+      "chapter": 408,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 404: Bow Down In Prostration (1)"
+    },
+    {
+      "file": "chapter-409.txt",
+      "chapter": 409,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 405: Bow Down In Prostration (2)"
+    },
+    {
+      "file": "chapter-410.txt",
+      "chapter": 410,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 406: Bow Down In Prostration (3)"
+    },
+    {
+      "file": "chapter-411.txt",
+      "chapter": 411,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 407: Bow Down In Prostration (4)"
+    },
+    {
+      "file": "chapter-412.txt",
+      "chapter": 412,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 408: Bow Down In Prostration (5)"
+    },
+    {
+      "file": "chapter-413.txt",
+      "chapter": 413,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 409: God of Time."
+    },
+    {
+      "file": "chapter-414.txt",
+      "chapter": 414,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 410: Regressor (回歸者)"
+    },
+    {
+      "file": "chapter-415.txt",
+      "chapter": 415,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 411: 20th Cycle's First Day."
+    },
+    {
+      "file": "chapter-416.txt",
+      "chapter": 416,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 412: /Soar"
+    },
+    {
+      "file": "chapter-417.txt",
+      "chapter": 417,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 413: Three Great Disasters (1)"
+    },
+    {
+      "file": "chapter-418.txt",
+      "chapter": 418,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 414: Three Great Disasters (2)"
+    },
+    {
+      "file": "chapter-419.txt",
+      "chapter": 419,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 415: Three Great Disasters (3)"
+    },
+    {
+      "file": "chapter-420.txt",
+      "chapter": 420,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 416: Face-to-Face (1)"
+    },
+    {
+      "file": "chapter-421.txt",
+      "chapter": 421,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 417: Face-to-Face (2)"
+    },
+    {
+      "file": "chapter-422.txt",
+      "chapter": 422,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 418: Face-to-Face (3)"
+    },
+    {
+      "file": "chapter-423.txt",
+      "chapter": 423,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 419: Broken Ones (1)"
+    },
+    {
+      "file": "chapter-424.txt",
+      "chapter": 424,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 420: Broken Ones (2)"
+    },
+    {
+      "file": "chapter-425.txt",
+      "chapter": 425,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 421: Broken Ones (3)"
+    },
+    {
+      "file": "chapter-426.txt",
+      "chapter": 426,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 422: What Does A Person Live For (1)"
+    },
+    {
+      "file": "chapter-427.txt",
+      "chapter": 427,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 423: What Does A Person Live For (2)"
+    },
+    {
+      "file": "chapter-428.txt",
+      "chapter": 428,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 424: What Does A Person Live For (3)"
+    },
+    {
+      "file": "chapter-429.txt",
+      "chapter": 429,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 425: What Does A Person Live For (4)"
+    },
+    {
+      "file": "chapter-430.txt",
+      "chapter": 430,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 426: What Does A Person Live For (5)"
+    },
+    {
+      "file": "chapter-431.txt",
+      "chapter": 431,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 427: What Does A Person Live For (6)"
+    },
+    {
+      "file": "chapter-432.txt",
+      "chapter": 432,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 428: 21st Cycle's First Day"
+    },
+    {
+      "file": "chapter-433.txt",
+      "chapter": 433,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 429: Her (1)"
+    },
+    {
+      "file": "chapter-434.txt",
+      "chapter": 434,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 430: Her (2)"
+    },
+    {
+      "file": "chapter-435.txt",
+      "chapter": 435,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 431: Her (3)"
+    },
+    {
+      "file": "chapter-436.txt",
+      "chapter": 436,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 432: Her (4)"
+    },
+    {
+      "file": "chapter-437.txt",
+      "chapter": 437,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 433: Her (5)"
+    },
+    {
+      "file": "chapter-438.txt",
+      "chapter": 438,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 434: Her (6)"
+    },
+    {
+      "file": "chapter-439.txt",
+      "chapter": 439,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 435: Her (7)"
+    },
+    {
+      "file": "chapter-440.txt",
+      "chapter": 440,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 436: Her (8)"
+    },
+    {
+      "file": "chapter-441.txt",
+      "chapter": 441,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 437: Her (9)"
+    },
+    {
+      "file": "chapter-442.txt",
+      "chapter": 442,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 438: Her (10)"
+    },
+    {
+      "file": "chapter-443.txt",
+      "chapter": 443,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 439: Descend (1)"
+    },
+    {
+      "file": "chapter-444.txt",
+      "chapter": 444,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 440: Descend (2)"
+    },
+    {
+      "file": "chapter-445.txt",
+      "chapter": 445,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 441: Descend (3)"
+    },
+    {
+      "file": "chapter-446.txt",
+      "chapter": 446,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 442: Descend (4)"
+    },
+    {
+      "file": "chapter-447.txt",
+      "chapter": 447,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 443: Descend (5)"
+    },
+    {
+      "file": "chapter-448.txt",
+      "chapter": 448,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 444: Mad (怪) Lord (君) (1)"
+    },
+    {
+      "file": "chapter-449.txt",
+      "chapter": 449,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 445: Mad (怪) Lord (君) (2)"
+    },
+    {
+      "file": "chapter-450.txt",
+      "chapter": 450,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 446: Mad (怪) Lord (君) (3)"
+    },
+    {
+      "file": "chapter-451.txt",
+      "chapter": 451,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 447: Mad (怪) Lord (君) (4)"
+    },
+    {
+      "file": "chapter-452.txt",
+      "chapter": 452,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 448: Yeon's Heart (1)"
+    },
+    {
+      "file": "chapter-453.txt",
+      "chapter": 453,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 449: Yeon's Heart (2)"
+    },
+    {
+      "file": "chapter-454.txt",
+      "chapter": 454,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 450: Yeon's Heart (3)"
+    },
+    {
+      "file": "chapter-455.txt",
+      "chapter": 455,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 451: Yeon's Heart (4)"
+    },
+    {
+      "file": "chapter-456.txt",
+      "chapter": 456,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 452: Yeon's Heart (5)"
+    },
+    {
+      "file": "chapter-457.txt",
+      "chapter": 457,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 453: Yeon's Heart (6)"
+    },
+    {
+      "file": "chapter-458.txt",
+      "chapter": 458,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 454: Yeon's Heart (7)"
+    },
+    {
+      "file": "chapter-459.txt",
+      "chapter": 459,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 455: Full Blossom (滿開)"
+    },
+    {
+      "file": "chapter-460.txt",
+      "chapter": 460,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 456: Key (1)"
+    },
+    {
+      "file": "chapter-461.txt",
+      "chapter": 461,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 457: Key (2)"
+    },
+    {
+      "file": "chapter-462.txt",
+      "chapter": 462,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 458: Key (3)"
+    },
+    {
+      "file": "chapter-463.txt",
+      "chapter": 463,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 459: The Place The Snake Cannot Be Found (1)"
+    },
+    {
+      "file": "chapter-464.txt",
+      "chapter": 464,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 460: The Place The Snake Cannot Be Found (2)"
+    },
+    {
+      "file": "chapter-465.txt",
+      "chapter": 465,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 461: The Place The Snake Cannot Find (3)"
+    },
+    {
+      "file": "chapter-466.txt",
+      "chapter": 466,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 462: The Place The Snake Cannot Find (4)"
+    },
+    {
+      "file": "chapter-467.txt",
+      "chapter": 467,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 463: The Place The Snake Cannot Find (5)"
+    },
+    {
+      "file": "chapter-468.txt",
+      "chapter": 468,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 464: The Place The Snake Can Find (6)"
+    },
+    {
+      "file": "chapter-469.txt",
+      "chapter": 469,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 465: The Place The Snake Can Find (7)"
+    },
+    {
+      "file": "chapter-470.txt",
+      "chapter": 470,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 466: Found It"
+    },
+    {
+      "file": "chapter-471.txt",
+      "chapter": 471,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 467: Laugh. Only You Will Be Laughing"
+    },
+    {
+      "file": "chapter-472.txt",
+      "chapter": 472,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 468: First Day, First Day, First Day...First Day!!!"
+    },
+    {
+      "file": "chapter-473.txt",
+      "chapter": 473,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 469: Star Shattering Advancement"
+    },
+    {
+      "file": "chapter-474.txt",
+      "chapter": 474,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 470: 701st Cycle's First Day. And..."
+    },
+    {
+      "file": "chapter-475.txt",
+      "chapter": 475,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 471: Divine Descent (降神)"
+    },
+    {
+      "file": "chapter-476.txt",
+      "chapter": 476,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 472: 998th Cycle's First Day."
+    },
+    {
+      "file": "chapter-477.txt",
+      "chapter": 477,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 473: Her (1)"
+    },
+    {
+      "file": "chapter-478.txt",
+      "chapter": 478,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 474: Her (2)"
+    },
+    {
+      "file": "chapter-479.txt",
+      "chapter": 479,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 475: Her (3)"
+    },
+    {
+      "file": "chapter-480.txt",
+      "chapter": 480,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 476: Sacred Sea (1)"
+    },
+    {
+      "file": "chapter-481.txt",
+      "chapter": 481,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 477: Sacred Sea (2)"
+    },
+    {
+      "file": "chapter-482.txt",
+      "chapter": 482,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 478: Sacred Sea (3)"
+    },
+    {
+      "file": "chapter-483.txt",
+      "chapter": 483,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 479: Sacred Sea (4)"
+    },
+    {
+      "file": "chapter-484.txt",
+      "chapter": 484,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 480: Esteemed One's Power"
+    },
+    {
+      "file": "chapter-485.txt",
+      "chapter": 485,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 481: Bound God (1)"
+    },
+    {
+      "file": "chapter-486.txt",
+      "chapter": 486,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 482: Bound God (2)"
+    },
+    {
+      "file": "chapter-487.txt",
+      "chapter": 487,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 483: Bound God (3)"
+    },
+    {
+      "file": "chapter-488.txt",
+      "chapter": 488,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 484: Empty One (1)"
+    },
+    {
+      "file": "chapter-489.txt",
+      "chapter": 489,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 485: Empty One (2)"
+    },
+    {
+      "file": "chapter-490.txt",
+      "chapter": 490,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 486: Empty One (3)"
+    },
+    {
+      "file": "chapter-491.txt",
+      "chapter": 491,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 487: Esteemed One's Path (1)"
+    },
+    {
+      "file": "chapter-492.txt",
+      "chapter": 492,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 488: Esteemed One's Path (2)"
+    },
+    {
+      "file": "chapter-493.txt",
+      "chapter": 493,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 489: Esteemed One's Path (3)"
+    },
+    {
+      "file": "chapter-494.txt",
+      "chapter": 494,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 490: Eve of the End (終末前夜) (1)"
+    },
+    {
+      "file": "chapter-495.txt",
+      "chapter": 495,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 491: Eve of the End (終末前夜) (2)"
+    },
+    {
+      "file": "chapter-496.txt",
+      "chapter": 496,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 492: Eve of the End (終末前夜) (3)"
+    },
+    {
+      "file": "chapter-497.txt",
+      "chapter": 497,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 493: Eve of the End (終末前夜) (4)"
+    },
+    {
+      "file": "chapter-498.txt",
+      "chapter": 498,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 494: Eve of the End (終末前夜) (5)"
+    },
+    {
+      "file": "chapter-499.txt",
+      "chapter": 499,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 495: Seo Hweol's Main Body (1)"
+    },
+    {
+      "file": "chapter-500.txt",
+      "chapter": 500,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 496: Seo Hweol's Main Body (2)"
+    },
+    {
+      "file": "chapter-501.txt",
+      "chapter": 501,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 497: Seo Hweol's Main Body (3)"
+    },
+    {
+      "file": "chapter-502.txt",
+      "chapter": 502,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 498: Bugs"
+    },
+    {
+      "file": "chapter-503.txt",
+      "chapter": 503,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 499: 999th Cycle's First Day"
+    },
+    {
+      "file": "chapter-504.txt",
+      "chapter": 504,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 500: Conclusion Of The Escape"
+    },
+    {
+      "file": "chapter-505.txt",
+      "chapter": 505,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 501: Kang Min-hee"
+    },
+    {
+      "file": "chapter-506.txt",
+      "chapter": 506,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 502: Half-Immortal Realm (半仙之境)"
+    },
+    {
+      "file": "chapter-507.txt",
+      "chapter": 507,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 503: Yearned-for Reunion (1)"
+    },
+    {
+      "file": "chapter-508.txt",
+      "chapter": 508,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 504: Yearned-for Reunion (2)"
+    },
+    {
+      "file": "chapter-509.txt",
+      "chapter": 509,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 505: Yearned-for Reunion (3)"
+    },
+    {
+      "file": "chapter-510.txt",
+      "chapter": 510,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 506: Seo Ran's Family (1)"
+    },
+    {
+      "file": "chapter-511.txt",
+      "chapter": 511,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 507: Seo Ran's Family (2)"
+    },
+    {
+      "file": "chapter-512.txt",
+      "chapter": 512,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 508: Seo Ran's Family (3)"
+    },
+    {
+      "file": "chapter-513.txt",
+      "chapter": 513,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 509: Seo Ran's Family (4)"
+    },
+    {
+      "file": "chapter-514.txt",
+      "chapter": 514,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 510: Seo Ran's Family (5)"
+    },
+    {
+      "file": "chapter-515.txt",
+      "chapter": 515,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 511: Seo Ran's Family (6)"
+    },
+    {
+      "file": "chapter-516.txt",
+      "chapter": 516,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 512: Seo Ran's Family (7)"
+    },
+    {
+      "file": "chapter-517.txt",
+      "chapter": 517,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 513: God of Cedarwood Painting"
+    },
+    {
+      "file": "chapter-518.txt",
+      "chapter": 518,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 514: Go (古)"
+    },
+    {
+      "file": "chapter-519.txt",
+      "chapter": 519,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 515: Festival Of The Eve (前夜祭) (1)"
+    },
+    {
+      "file": "chapter-520.txt",
+      "chapter": 520,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 516: Festival Of The Eve (前夜祭) (2)"
+    },
+    {
+      "file": "chapter-521.txt",
+      "chapter": 521,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 517: Festival Of The Eve (前夜祭) (3)"
+    },
+    {
+      "file": "chapter-522.txt",
+      "chapter": 522,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 518: Festival of the Eve (前夜祭) (4)"
+    },
+    {
+      "file": "chapter-523.txt",
+      "chapter": 523,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 519: Festival Of The Eve (前夜祭) (5)"
+    },
+    {
+      "file": "chapter-524.txt",
+      "chapter": 524,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 520: Seo Hweol's Origin (本) (1)"
+    },
+    {
+      "file": "chapter-525.txt",
+      "chapter": 525,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 521: Seo Hweol's Origin (本) (2)"
+    },
+    {
+      "file": "chapter-526.txt",
+      "chapter": 526,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 522: Seo Hweol's Origin (本) (3)"
+    },
+    {
+      "file": "chapter-527.txt",
+      "chapter": 527,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 523: Seo Hweol's Origin (本) (4)"
+    },
+    {
+      "file": "chapter-528.txt",
+      "chapter": 528,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 524: Seo Hweol's Memories (1)"
+    },
+    {
+      "file": "chapter-529.txt",
+      "chapter": 529,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 525: Seo Hweol's Memories (2)"
+    },
+    {
+      "file": "chapter-530.txt",
+      "chapter": 530,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 526: Seo Hweol's Memories (3)"
+    },
+    {
+      "file": "chapter-531.txt",
+      "chapter": 531,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 527: Filling the Heavens (滿天) (1)"
+    },
+    {
+      "file": "chapter-532.txt",
+      "chapter": 532,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 528: Filling the Heavens (滿天) (2)"
+    },
+    {
+      "file": "chapter-533.txt",
+      "chapter": 533,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 529: Filling the Heavens (滿天) (3)"
+    },
+    {
+      "file": "chapter-534.txt",
+      "chapter": 534,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 530: Filling the Heavens (滿天) (4)"
+    },
+    {
+      "file": "chapter-535.txt",
+      "chapter": 535,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 531: Filling the Heavens (滿天) (5)"
+    },
+    {
+      "file": "chapter-536.txt",
+      "chapter": 536,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 532: Filling the Heavens (滿天) (6)"
+    },
+    {
+      "file": "chapter-537.txt",
+      "chapter": 537,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 533: Severing Heaven (斷天) (1)"
+    },
+    {
+      "file": "chapter-538.txt",
+      "chapter": 538,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 534: Severing Heaven (斷天) (2)"
+    },
+    {
+      "file": "chapter-539.txt",
+      "chapter": 539,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 535: Severing Heaven (斷天) (3)"
+    },
+    {
+      "file": "chapter-540.txt",
+      "chapter": 540,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 536: Severing Heaven (斷天) (4)"
+    },
+    {
+      "file": "chapter-541.txt",
+      "chapter": 541,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 537: Goodbye, Daoist Seo"
+    },
+    {
+      "file": "chapter-542.txt",
+      "chapter": 542,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 538: Vast Cold's Descendent (1)"
+    },
+    {
+      "file": "chapter-543.txt",
+      "chapter": 543,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 539: Vast Cold's Descendant (2)"
+    },
+    {
+      "file": "chapter-544.txt",
+      "chapter": 544,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 540: Vast Cold's Descendant (3)"
+    },
+    {
+      "file": "chapter-545.txt",
+      "chapter": 545,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 541: Vast Cold's Descendant (4)"
+    },
+    {
+      "file": "chapter-546.txt",
+      "chapter": 546,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 542: True Immortal Advancement"
+    },
+    {
+      "file": "chapter-547.txt",
+      "chapter": 547,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 543: 1000th Cycle's First Day. And Her"
+    },
+    {
+      "file": "chapter-548.txt",
+      "chapter": 548,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 544: Black Snake Biting Its Tail"
+    },
+    {
+      "file": "chapter-549.txt",
+      "chapter": 549,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 545: Ascension (3)"
+    },
+    {
+      "file": "chapter-550.txt",
+      "chapter": 550,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 546: Sealing Immortal (封仙) (1)"
+    },
+    {
+      "file": "chapter-551.txt",
+      "chapter": 551,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 547: Sealing Immortal (封仙) (2)"
+    },
+    {
+      "file": "chapter-552.txt",
+      "chapter": 552,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 548: Sealing Immortal (3)"
+    },
+    {
+      "file": "chapter-553.txt",
+      "chapter": 553,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 549: A Being Who Dreams"
+    },
+    {
+      "file": "chapter-554.txt",
+      "chapter": 554,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 550: World Of Sun And Moon (1)"
+    },
+    {
+      "file": "chapter-555.txt",
+      "chapter": 555,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 551: World Of Sun And Moon (2)"
+    },
+    {
+      "file": "chapter-556.txt",
+      "chapter": 556,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 552: World Of Sun And Moon (3)"
+    },
+    {
+      "file": "chapter-557.txt",
+      "chapter": 557,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 553: World Of Sun And Moon (4)"
+    },
+    {
+      "file": "chapter-558.txt",
+      "chapter": 558,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 554: World Of Sun And Moon (5)"
+    },
+    {
+      "file": "chapter-559.txt",
+      "chapter": 559,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 555: World Of Sun And Moon (6)"
+    },
+    {
+      "file": "chapter-560.txt",
+      "chapter": 560,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 556: World Of Sun And Moon (7)"
+    },
+    {
+      "file": "chapter-561.txt",
+      "chapter": 561,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 557: World Of Sun And Moon (8)"
+    },
+    {
+      "file": "chapter-562.txt",
+      "chapter": 562,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 558: World Of Sun And Moon (9)"
+    },
+    {
+      "file": "chapter-563.txt",
+      "chapter": 563,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 559: Bearing Tree Heavenly Domain"
+    },
+    {
+      "file": "chapter-564.txt",
+      "chapter": 564,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 560: Earth Immortal (1)"
+    },
+    {
+      "file": "chapter-565.txt",
+      "chapter": 565,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 561: Earth Immortal (2)"
+    },
+    {
+      "file": "chapter-566.txt",
+      "chapter": 566,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 562: Earth Immortal (3)"
+    },
+    {
+      "file": "chapter-567.txt",
+      "chapter": 567,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 563: Earth Immortal (4)"
+    },
+    {
+      "file": "chapter-568.txt",
+      "chapter": 568,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 564: Earth Immortal (5)"
+    },
+    {
+      "file": "chapter-569.txt",
+      "chapter": 569,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 565: Earth Immortal (6)"
+    },
+    {
+      "file": "chapter-570.txt",
+      "chapter": 570,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 566: Earth Immortal (7)"
+    },
+    {
+      "file": "chapter-571.txt",
+      "chapter": 571,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 567: Glass and Crystal (1)"
+    },
+    {
+      "file": "chapter-572.txt",
+      "chapter": 572,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 568: Glass and Crystal (2)"
+    },
+    {
+      "file": "chapter-573.txt",
+      "chapter": 573,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 569: Glass and Crystal (3)"
+    },
+    {
+      "file": "chapter-574.txt",
+      "chapter": 574,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 570: Heavenly Lord's Authority"
+    },
+    {
+      "file": "chapter-575.txt",
+      "chapter": 575,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 571: 1002nd Cycle's First Day"
+    },
+    {
+      "file": "chapter-576.txt",
+      "chapter": 576,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 572: Radiance Ten Heavens (光明十天) (1)"
+    },
+    {
+      "file": "chapter-577.txt",
+      "chapter": 577,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 573: Radiance Ten Heavens (光明十天) (2)"
+    },
+    {
+      "file": "chapter-578.txt",
+      "chapter": 578,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 574: Radiance Ten Heavens (光明十天) (3)"
+    },
+    {
+      "file": "chapter-579.txt",
+      "chapter": 579,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 575: Radiance Ten Heavens (光明十天) (4)"
+    },
+    {
+      "file": "chapter-580.txt",
+      "chapter": 580,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 576: Radiance Ten Heavens (光明十天) (5)"
+    },
+    {
+      "file": "chapter-581.txt",
+      "chapter": 581,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 577: Radiance Ten Heavens (光明十天) (6)"
+    },
+    {
+      "file": "chapter-582.txt",
+      "chapter": 582,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 578: Radiance Ten Heavens (光明十天) (7)"
+    },
+    {
+      "file": "chapter-583.txt",
+      "chapter": 583,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 579: Radiance Ten Heavens (光明十天) (8)"
+    },
+    {
+      "file": "chapter-584.txt",
+      "chapter": 584,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 580: Radiance Ten Heavens (光明十天) (9)"
+    },
+    {
+      "file": "chapter-585.txt",
+      "chapter": 585,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 581: Sunlight Hunting (1)"
+    },
+    {
+      "file": "chapter-586.txt",
+      "chapter": 586,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 582: Sunlight Hunting (2)"
+    },
+    {
+      "file": "chapter-587.txt",
+      "chapter": 587,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 583: Sunlight Hunting (3)"
+    },
+    {
+      "file": "chapter-588.txt",
+      "chapter": 588,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 584: Sunlight Hunting (4)"
+    },
+    {
+      "file": "chapter-589.txt",
+      "chapter": 589,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 585: Hunter, Hunted (1)"
+    },
+    {
+      "file": "chapter-590.txt",
+      "chapter": 590,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 586: Hunter, Hunted (2)"
+    },
+    {
+      "file": "chapter-591.txt",
+      "chapter": 591,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 587: 1003rd Cycle's First Day"
+    },
+    {
+      "file": "chapter-592.txt",
+      "chapter": 592,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 588: Mount Sumeru (1)"
+    },
+    {
+      "file": "chapter-593.txt",
+      "chapter": 593,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 589: Mount Sumeru (2)"
+    },
+    {
+      "file": "chapter-594.txt",
+      "chapter": 594,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 590: Mount Sumeru (3)"
+    },
+    {
+      "file": "chapter-595.txt",
+      "chapter": 595,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 591: Mount Sumeru (4)"
+    },
+    {
+      "file": "chapter-596.txt",
+      "chapter": 596,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 592: Mount Sumeru (5)"
+    },
+    {
+      "file": "chapter-597.txt",
+      "chapter": 597,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 593: Mount Sumeru (6)"
+    },
+    {
+      "file": "chapter-598.txt",
+      "chapter": 598,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 594: Mount Sumeru (7)"
+    },
+    {
+      "file": "chapter-599.txt",
+      "chapter": 599,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 595: Pen (1)"
+    },
+    {
+      "file": "chapter-600.txt",
+      "chapter": 600,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 596: Pen (2)"
+    },
+    {
+      "file": "chapter-601.txt",
+      "chapter": 601,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 597: Pen (3)"
+    },
+    {
+      "file": "chapter-602.txt",
+      "chapter": 602,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 598: Pen (4)"
+    },
+    {
+      "file": "chapter-603.txt",
+      "chapter": 603,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 599: Pen (5)"
+    },
+    {
+      "file": "chapter-604.txt",
+      "chapter": 604,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 600: Bird Trapped In A Cage (1)"
+    },
+    {
+      "file": "chapter-605.txt",
+      "chapter": 605,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 601: Bird Trapped In A Cage (2)"
+    },
+    {
+      "file": "chapter-606.txt",
+      "chapter": 606,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 602: Bird Trapped In A Cage (3)"
+    },
+    {
+      "file": "chapter-607.txt",
+      "chapter": 607,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 603: Bird Trapped In A Cage (4)"
+    },
+    {
+      "file": "chapter-608.txt",
+      "chapter": 608,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 604: Bird Trapped In A Cage (5)"
+    },
+    {
+      "file": "chapter-609.txt",
+      "chapter": 609,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 605: Crumbling Cage (1)"
+    },
+    {
+      "file": "chapter-610.txt",
+      "chapter": 610,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 606: Crumbling Cage (2)"
+    },
+    {
+      "file": "chapter-611.txt",
+      "chapter": 611,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 607: Crumbling Cage (3)"
+    },
+    {
+      "file": "chapter-612.txt",
+      "chapter": 612,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 608: Crumbling Cage (4)"
+    },
+    {
+      "file": "chapter-613.txt",
+      "chapter": 613,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 609: 1004th Cycle's First Day"
+    },
+    {
+      "file": "chapter-614.txt",
+      "chapter": 614,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 610: Kidnapper, One Who Returns To Thee (歸依者) (1)"
+    },
+    {
+      "file": "chapter-615.txt",
+      "chapter": 615,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 611: Kidnapper, One Who Returns To Thee (歸依者) (2)"
+    },
+    {
+      "file": "chapter-616.txt",
+      "chapter": 616,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 612: A Hungry World (1)"
+    },
+    {
+      "file": "chapter-617.txt",
+      "chapter": 617,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 613: A Hungry World (2)"
+    },
+    {
+      "file": "chapter-618.txt",
+      "chapter": 618,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 614: A Hungry World (3)"
+    },
+    {
+      "file": "chapter-619.txt",
+      "chapter": 619,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 615: Cultivation (1)"
+    },
+    {
+      "file": "chapter-620.txt",
+      "chapter": 620,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 616: Cultivation (2)"
+    },
+    {
+      "file": "chapter-621.txt",
+      "chapter": 621,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 617: Cultivation (3)"
+    },
+    {
+      "file": "chapter-622.txt",
+      "chapter": 622,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 618: Cultivation (4)"
+    },
+    {
+      "file": "chapter-623.txt",
+      "chapter": 623,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 619: Cultivation (5)"
+    },
+    {
+      "file": "chapter-624.txt",
+      "chapter": 624,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 620: Inverted World (1)"
+    },
+    {
+      "file": "chapter-625.txt",
+      "chapter": 625,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 621: Inverted World (2)"
+    },
+    {
+      "file": "chapter-626.txt",
+      "chapter": 626,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 622: Inverted World (3)"
+    },
+    {
+      "file": "chapter-627.txt",
+      "chapter": 627,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 623: Inverted World (4)"
+    },
+    {
+      "file": "chapter-628.txt",
+      "chapter": 628,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 624: Inverted World (5)"
+    },
+    {
+      "file": "chapter-629.txt",
+      "chapter": 629,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 625: Royal Authority (1)"
+    },
+    {
+      "file": "chapter-630.txt",
+      "chapter": 630,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 626: Royal Authority (2)"
+    },
+    {
+      "file": "chapter-631.txt",
+      "chapter": 631,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 627: Royal Authority (3)"
+    },
+    {
+      "file": "chapter-632.txt",
+      "chapter": 632,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 628: Royal Authority (4)"
+    },
+    {
+      "file": "chapter-633.txt",
+      "chapter": 633,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 629: Royal Authority (5)"
+    },
+    {
+      "file": "chapter-634.txt",
+      "chapter": 634,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 630: Mastering The Mantra"
+    },
+    {
+      "file": "chapter-635.txt",
+      "chapter": 635,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 631: Great Net Advancement"
+    },
+    {
+      "file": "chapter-636.txt",
+      "chapter": 636,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 632: Golden Speed Heavenly King (金迅天王) (1)"
+    },
+    {
+      "file": "chapter-637.txt",
+      "chapter": 637,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 633: Golden Speed Heavenly King (金迅天王) (2)"
+    },
+    {
+      "file": "chapter-638.txt",
+      "chapter": 638,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 634: Golden Speed Heavenly King (金迅天王) (3)"
+    },
+    {
+      "file": "chapter-639.txt",
+      "chapter": 639,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 635: Heavenly Venerable Hunting (1)"
+    },
+    {
+      "file": "chapter-640.txt",
+      "chapter": 640,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 636: Heavenly Venerable Hunting (2)"
+    },
+    {
+      "file": "chapter-641.txt",
+      "chapter": 641,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 637: Heavenly Venerable Hunting (3)"
+    },
+    {
+      "file": "chapter-642.txt",
+      "chapter": 642,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 638: Northern Heavenly Venerable"
+    },
+    {
+      "file": "chapter-643.txt",
+      "chapter": 643,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 639: Heavenly Venerable's Power (1)"
+    },
+    {
+      "file": "chapter-644.txt",
+      "chapter": 644,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 640: Heavenly Venerable's Power (2)"
+    },
+    {
+      "file": "chapter-645.txt",
+      "chapter": 645,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 641: Heavenly King's Power"
+    },
+    {
+      "file": "chapter-646.txt",
+      "chapter": 646,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 642: Snake That Swallows Supplication"
+    },
+    {
+      "file": "chapter-647.txt",
+      "chapter": 647,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 643: 1005th Cycle's First Day"
+    },
+    {
+      "file": "chapter-648.txt",
+      "chapter": 648,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 644: God of the Underworld (1)"
+    },
+    {
+      "file": "chapter-649.txt",
+      "chapter": 649,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 645: God of the Underworld (2)"
+    },
+    {
+      "file": "chapter-650.txt",
+      "chapter": 650,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 646: God of the Underworld (3)"
+    },
+    {
+      "file": "chapter-651.txt",
+      "chapter": 651,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 647: Owner of Wisdom (1)"
+    },
+    {
+      "file": "chapter-652.txt",
+      "chapter": 652,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 648: Owner of Wisdom (2)"
+    },
+    {
+      "file": "chapter-653.txt",
+      "chapter": 653,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 649: Owner of Wisdom (3)"
+    },
+    {
+      "file": "chapter-654.txt",
+      "chapter": 654,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 650: Owner of Wisdom (4)"
+    },
+    {
+      "file": "chapter-655.txt",
+      "chapter": 655,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 651: Owner of Wisdom (5)"
+    },
+    {
+      "file": "chapter-656.txt",
+      "chapter": 656,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 652: The First Light"
+    },
+    {
+      "file": "chapter-657.txt",
+      "chapter": 657,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 653: Heaven's Key (1)"
+    },
+    {
+      "file": "chapter-658.txt",
+      "chapter": 658,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 654: Heaven's Key (2)"
+    },
+    {
+      "file": "chapter-659.txt",
+      "chapter": 659,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 655: Heaven's Key (3)"
+    },
+    {
+      "file": "chapter-660.txt",
+      "chapter": 660,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 656: Heaven's Key (4)"
+    },
+    {
+      "file": "chapter-661.txt",
+      "chapter": 661,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 657: Heaven's Key (5)"
+    },
+    {
+      "file": "chapter-662.txt",
+      "chapter": 662,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 658: Heaven's Key (6)"
+    },
+    {
+      "file": "chapter-663.txt",
+      "chapter": 663,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 659: I Shall Teach You Properly"
+    },
+    {
+      "file": "chapter-664.txt",
+      "chapter": 664,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 660: Devil God"
+    },
+    {
+      "file": "chapter-665.txt",
+      "chapter": 665,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 661: Dao of Great Mountain"
+    },
+    {
+      "file": "chapter-666.txt",
+      "chapter": 666,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 662: Our Path Ahead"
+    },
+    {
+      "file": "chapter-667.txt",
+      "chapter": 667,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 663: Arranged Path"
+    },
+    {
+      "file": "chapter-668.txt",
+      "chapter": 668,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 664: Path Toward Secret History"
+    },
+    {
+      "file": "chapter-669.txt",
+      "chapter": 669,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 665: Beast Realm (畜生道)"
+    },
+    {
+      "file": "chapter-670.txt",
+      "chapter": 670,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 666: Witness of Eternity (1)"
+    },
+    {
+      "file": "chapter-671.txt",
+      "chapter": 671,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 667: Witness of Eternity (2)"
+    },
+    {
+      "file": "chapter-672.txt",
+      "chapter": 672,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 668: Witness of Eternity (3)"
+    },
+    {
+      "file": "chapter-673.txt",
+      "chapter": 673,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 669: Witness of Eternity (4)"
+    },
+    {
+      "file": "chapter-674.txt",
+      "chapter": 674,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 670: Witness of Eternity (5)"
+    },
+    {
+      "file": "chapter-675.txt",
+      "chapter": 675,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 671: Holy Mother (1)"
+    },
+    {
+      "file": "chapter-676.txt",
+      "chapter": 676,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 672: Holy Mother (2)"
+    },
+    {
+      "file": "chapter-677.txt",
+      "chapter": 677,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 673: Holy Mother (3)"
+    },
+    {
+      "file": "chapter-678.txt",
+      "chapter": 678,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 674: Holy Father, Mountain God"
+    },
+    {
+      "file": "chapter-679.txt",
+      "chapter": 679,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 675: Eternal Regression"
+    },
+    {
+      "file": "chapter-680.txt",
+      "chapter": 680,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 676: Time That Has Passed Cannot Return. But..."
+    },
+    {
+      "file": "chapter-681.txt",
+      "chapter": 681,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 677: Tragic History (1)"
+    },
+    {
+      "file": "chapter-682.txt",
+      "chapter": 682,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 678: Tragic History (2)"
+    },
+    {
+      "file": "chapter-683.txt",
+      "chapter": 683,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 679: Tragic History (3)"
+    },
+    {
+      "file": "chapter-684.txt",
+      "chapter": 684,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 680: Tragic History (4)"
+    },
+    {
+      "file": "chapter-685.txt",
+      "chapter": 685,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 681: Sword God Dance (1)"
+    },
+    {
+      "file": "chapter-686.txt",
+      "chapter": 686,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 682: Sword God Dance (2)"
+    },
+    {
+      "file": "chapter-687.txt",
+      "chapter": 687,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 683: Sword God Dance (3)"
+    },
+    {
+      "file": "chapter-688.txt",
+      "chapter": 688,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 684: Sword God Dance (4)"
+    },
+    {
+      "file": "chapter-689.txt",
+      "chapter": 689,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 685: 2010th Cycle's First Day"
+    },
+    {
+      "file": "chapter-690.txt",
+      "chapter": 690,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 686: Imperial King (1)"
+    },
+    {
+      "file": "chapter-691.txt",
+      "chapter": 691,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 687: Imperial King (2)"
+    },
+    {
+      "file": "chapter-692.txt",
+      "chapter": 692,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 688: Imperial King (3)"
+    },
+    {
+      "file": "chapter-693.txt",
+      "chapter": 693,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 689: Heavenly Punishment Supreme Deity (1)"
+    },
+    {
+      "file": "chapter-694.txt",
+      "chapter": 694,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 690: Heavenly Punishment Supreme Deity (2)"
+    },
+    {
+      "file": "chapter-695.txt",
+      "chapter": 695,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 691: Heavenly Punishment Supreme Deity (3)"
+    },
+    {
+      "file": "chapter-696.txt",
+      "chapter": 696,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 692: Jeon Myeong-hoon"
+    },
+    {
+      "file": "chapter-697.txt",
+      "chapter": 697,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 693: Do Gon (屠乾)"
+    },
+    {
+      "file": "chapter-698.txt",
+      "chapter": 698,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 694: Red Pearl Cycling Heavenly King (赤珠轉天王)"
+    },
+    {
+      "file": "chapter-699.txt",
+      "chapter": 699,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 695: Spiraling Dragon"
+    },
+    {
+      "file": "chapter-700.txt",
+      "chapter": 700,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 696: Determinism"
+    },
+    {
+      "file": "chapter-701.txt",
+      "chapter": 701,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 697: The Beginning and the End"
+    },
+    {
+      "file": "chapter-702.txt",
+      "chapter": 702,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 698: Immortal Beast King"
+    },
+    {
+      "file": "chapter-703.txt",
+      "chapter": 703,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 699: 2011th Cycle's First Day"
+    },
+    {
+      "file": "chapter-704.txt",
+      "chapter": 704,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 700: Annihilation and Flower (1)"
+    },
+    {
+      "file": "chapter-705.txt",
+      "chapter": 705,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 701: Annihilation and Flower (2)"
+    },
+    {
+      "file": "chapter-706.txt",
+      "chapter": 706,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 702: Annihilation and Flower (3)"
+    },
+    {
+      "file": "chapter-707.txt",
+      "chapter": 707,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 703: Annihilation and Flower (4)"
+    },
+    {
+      "file": "chapter-708.txt",
+      "chapter": 708,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 704: Annihilation and Flower (5)"
+    },
+    {
+      "file": "chapter-709.txt",
+      "chapter": 709,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 705: Annihilation and Flower (6)"
+    },
+    {
+      "file": "chapter-710.txt",
+      "chapter": 710,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 706: Annihilation and Flower (7)"
+    },
+    {
+      "file": "chapter-711.txt",
+      "chapter": 711,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 707: Change, Impermanence (1)"
+    },
+    {
+      "file": "chapter-712.txt",
+      "chapter": 712,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 708: Change, Impermanence (2)"
+    },
+    {
+      "file": "chapter-713.txt",
+      "chapter": 713,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 709: Change, Impermanence (3)"
+    },
+    {
+      "file": "chapter-714.txt",
+      "chapter": 714,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 710: Spring Dream (春夢) (1)"
+    },
+    {
+      "file": "chapter-715.txt",
+      "chapter": 715,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 715: Chapter 711: Spring Dream (春夢) (2)"
+    },
+    {
+      "file": "chapter-716.txt",
+      "chapter": 716,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 716: Chapter 712: Spring Dream (春夢) (3)"
+    },
+    {
+      "file": "chapter-717.txt",
+      "chapter": 717,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 717: Chapter 713: Spring Dream (春夢) (4)"
+    },
+    {
+      "file": "chapter-718.txt",
+      "chapter": 718,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 718: Chapter 714: Lapis Lazuli Flower Heavenly King (瑠璃花天王)"
+    },
+    {
+      "file": "chapter-719.txt",
+      "chapter": 719,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 719: Chapter 715: Fireworks"
+    },
+    {
+      "file": "chapter-720.txt",
+      "chapter": 720,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 720: Chapter 716: Spring Before The Flowers Fall (花落以前春)"
+    },
+    {
+      "file": "chapter-721.txt",
+      "chapter": 721,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 721: Chapter 717: Seven Stars"
+    },
+    {
+      "file": "chapter-722.txt",
+      "chapter": 722,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 722: Chapter 718: Owner of Names (1)"
+    },
+    {
+      "file": "chapter-723.txt",
+      "chapter": 723,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 723: Chapter 719: Owner of Names (2)"
+    },
+    {
+      "file": "chapter-724.txt",
+      "chapter": 724,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 724: Chapter 720: 2012th Cycle's First Day"
+    },
+    {
+      "file": "chapter-725.txt",
+      "chapter": 725,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 725: Chapter 721: What Has No Name (1)"
+    },
+    {
+      "file": "chapter-726.txt",
+      "chapter": 726,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 726: Chapter 722: What Has No Name (2)"
+    },
+    {
+      "file": "chapter-727.txt",
+      "chapter": 727,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 727: Chapter 723: What Has No Name (3)"
+    },
+    {
+      "file": "chapter-728.txt",
+      "chapter": 728,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 728: Chapter 724: Nameless (1)"
+    },
+    {
+      "file": "chapter-729.txt",
+      "chapter": 729,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 729: Chapter 725: Nameless (2)"
+    },
+    {
+      "file": "chapter-730.txt",
+      "chapter": 730,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 730: Chapter 726: Nameless (3)"
+    },
+    {
+      "file": "chapter-731.txt",
+      "chapter": 731,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 731: Chapter 727: Fathers (1)"
+    },
+    {
+      "file": "chapter-732.txt",
+      "chapter": 732,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 732: Chapter 728: Fathers (2)"
+    },
+    {
+      "file": "chapter-733.txt",
+      "chapter": 733,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 733: Chapter 729: Fathers (3)"
+    },
+    {
+      "file": "chapter-734.txt",
+      "chapter": 734,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 734: Chapter 730: Fathers (4)"
+    },
+    {
+      "file": "chapter-735.txt",
+      "chapter": 735,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 735: Chapter 731: ■ ■ ■ ■ Heavenly King"
+    },
+    {
+      "file": "chapter-736.txt",
+      "chapter": 736,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 736: Chapter 732: Hidden (隱) (1)"
+    },
+    {
+      "file": "chapter-737.txt",
+      "chapter": 737,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 737: Chapter 733: Hidden (隱) (2)"
+    },
+    {
+      "file": "chapter-738.txt",
+      "chapter": 738,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 738: Chapter 734: Hidden (隱) (3)"
+    },
+    {
+      "file": "chapter-739.txt",
+      "chapter": 739,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 739: Chapter 735: Hidden (隱) (4)"
+    },
+    {
+      "file": "chapter-740.txt",
+      "chapter": 740,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 740: Chapter 736: Snakes (1)"
+    },
+    {
+      "file": "chapter-741.txt",
+      "chapter": 741,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 741: Chapter 737: Snakes (2)"
+    },
+    {
+      "file": "chapter-742.txt",
+      "chapter": 742,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 742: Chapter 738: Snakes (3)"
+    },
+    {
+      "file": "chapter-743.txt",
+      "chapter": 743,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 743: Chapter 739: Snakes (4)"
+    },
+    {
+      "file": "chapter-744.txt",
+      "chapter": 744,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 744: Chapter 740: Evil God (1)"
+    },
+    {
+      "file": "chapter-745.txt",
+      "chapter": 745,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 745: Chapter 741: Evil God (2)"
+    },
+    {
+      "file": "chapter-746.txt",
+      "chapter": 746,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 746: Chapter 742: Evil God (3)"
+    },
+    {
+      "file": "chapter-747.txt",
+      "chapter": 747,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 747: Chapter 743: Evil God (4)"
+    },
+    {
+      "file": "chapter-748.txt",
+      "chapter": 748,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 748 Chapter 744 Evil God (5)"
+    },
+    {
+      "file": "chapter-749.txt",
+      "chapter": 749,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 749 Chapter 745 Light and Salt (1)"
+    },
+    {
+      "file": "chapter-750.txt",
+      "chapter": 750,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 750 Chapter 746 Light and Salt (2)"
+    },
+    {
+      "file": "chapter-751.txt",
+      "chapter": 751,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 751: Chapter 747: Light and Salt (3)"
+    },
+    {
+      "file": "chapter-752.txt",
+      "chapter": 752,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 752: Chapter 748: Light and Salt (4)"
+    },
+    {
+      "file": "chapter-753.txt",
+      "chapter": 753,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 753: Chapter 749: Light and Salt (5)"
+    },
+    {
+      "file": "chapter-754.txt",
+      "chapter": 754,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 754: Chapter 750: Light and Salt (6)"
+    },
+    {
+      "file": "chapter-755.txt",
+      "chapter": 755,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 755: Chapter 751: Light and Salt (7)"
+    },
+    {
+      "file": "chapter-756.txt",
+      "chapter": 756,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 756: Chapter 752: Light and Salt (8)"
+    },
+    {
+      "file": "chapter-757.txt",
+      "chapter": 757,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 757: Chapter 753: Light and Salt (9)"
+    },
+    {
+      "file": "chapter-758.txt",
+      "chapter": 758,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 758: Chapter 754: Light and Salt (10)"
+    },
+    {
+      "file": "chapter-759.txt",
+      "chapter": 759,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 759: Chapter 755: Light and Salt (11)"
+    },
+    {
+      "file": "chapter-760.txt",
+      "chapter": 760,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 760: Chapter 756: Devil Lord (1)"
+    },
+    {
+      "file": "chapter-761.txt",
+      "chapter": 761,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 761: Chapter 757: Devil Lord (2)"
+    },
+    {
+      "file": "chapter-762.txt",
+      "chapter": 762,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 762: Chapter 758: Devil Lord (3)"
+    },
+    {
+      "file": "chapter-763.txt",
+      "chapter": 763,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 763: Chapter 759: Devil Lord (4)"
+    },
+    {
+      "file": "chapter-764.txt",
+      "chapter": 764,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 764: Chapter 760: Devil Lord (5)"
+    },
+    {
+      "file": "chapter-765.txt",
+      "chapter": 765,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 765: Chapter 761: Dreams and Growth (1)"
+    },
+    {
+      "file": "chapter-766.txt",
+      "chapter": 766,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 766: Chapter 762: Dreams and Growth (2)"
+    },
+    {
+      "file": "chapter-767.txt",
+      "chapter": 767,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 767: Chapter 763: Dreams and Growth (3)"
+    },
+    {
+      "file": "chapter-768.txt",
+      "chapter": 768,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 768: Chapter 764: Dreams and Growth (4)"
+    },
+    {
+      "file": "chapter-769.txt",
+      "chapter": 769,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 769: Chapter 765: Dreams and Growth (5)"
+    },
+    {
+      "file": "chapter-770.txt",
+      "chapter": 770,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 770: Chapter 766: Radiance (1)"
+    },
+    {
+      "file": "chapter-771.txt",
+      "chapter": 771,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 771: Chapter 767: Radiance (2)"
+    },
+    {
+      "file": "chapter-772.txt",
+      "chapter": 772,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 772: Chapter 768: Radiance (3)"
+    },
+    {
+      "file": "chapter-773.txt",
+      "chapter": 773,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 773: Chapter 769: Radiance (4)"
+    },
+    {
+      "file": "chapter-774.txt",
+      "chapter": 774,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 774: Chapter 770: Radiance (5)"
+    },
+    {
+      "file": "chapter-775.txt",
+      "chapter": 775,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 775: Chapter 771: My Friend"
+    },
+    {
+      "file": "chapter-776.txt",
+      "chapter": 776,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 776: Chapter 772: Great Mountain Battle Begins"
+    },
+    {
+      "file": "chapter-777.txt",
+      "chapter": 777,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 777 Chapter 773: Unsightly Fight"
+    },
+    {
+      "file": "chapter-778.txt",
+      "chapter": 778,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 778 Chapter 774: Will of Gold"
+    },
+    {
+      "file": "chapter-779.txt",
+      "chapter": 779,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 779 Chapter 775: Will of Silver"
+    },
+    {
+      "file": "chapter-780.txt",
+      "chapter": 780,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 780 Chapter 776: Severing Mountain"
+    },
+    {
+      "file": "chapter-781.txt",
+      "chapter": 781,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 781 Chapter 777: Light"
+    },
+    {
+      "file": "chapter-782.txt",
+      "chapter": 782,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 782: Chapter 778: End of Immortal Cultivation"
+    },
+    {
+      "file": "chapter-783.txt",
+      "chapter": 783,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 783 Chapter 779: Thank You For Everything Until Now"
+    },
+    {
+      "file": "chapter-784.txt",
+      "chapter": 784,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 784 Chapter 780: Owner of Myriad Stars."
+    },
+    {
+      "file": "chapter-785.txt",
+      "chapter": 785,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 785 Chapter 781: 2013th Cycle's First Day."
+    },
+    {
+      "file": "chapter-786.txt",
+      "chapter": 786,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 786 Chapter 782: Let's Go."
+    },
+    {
+      "file": "chapter-787.txt",
+      "chapter": 787,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 787 Chapter 783: Ascension (昇天)"
+    },
+    {
+      "file": "chapter-788.txt",
+      "chapter": 788,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 788 Chapter 784: Audience (謁見)"
+    },
+    {
+      "file": "chapter-789.txt",
+      "chapter": 789,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 789 Chapter 785: 16th Cycle's First Day"
+    },
+    {
+      "file": "chapter-790.txt",
+      "chapter": 790,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 790 Chapter 786: Protagonist (主人公) (1)"
+    },
+    {
+      "file": "chapter-791.txt",
+      "chapter": 791,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 791 Chapter 787: Protagonist (主人公) (2)"
+    },
+    {
+      "file": "chapter-792.txt",
+      "chapter": 792,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 792 Chapter 788: Protagonist (主人公) (3)"
+    },
+    {
+      "file": "chapter-793.txt",
+      "chapter": 793,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 793 Chapter 789: Protagonist (主人公) (4)"
+    },
+    {
+      "file": "chapter-794.txt",
+      "chapter": 794,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 794 Chapter 790: Protagonist (主人公) (5)"
+    },
+    {
+      "file": "chapter-795.txt",
+      "chapter": 795,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 795 Chapter 791: Primordial Chaos (1)"
+    },
+    {
+      "file": "chapter-796.txt",
+      "chapter": 796,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 796 Chapter 792: Primordial Chaos (2)"
+    },
+    {
+      "file": "chapter-797.txt",
+      "chapter": 797,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 797 Chapter 793: Primordial Chaos (3)"
+    },
+    {
+      "file": "chapter-798.txt",
+      "chapter": 798,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 798 Chapter 794: Primordial Chaos (4)"
+    },
+    {
+      "file": "chapter-799.txt",
+      "chapter": 799,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 799 Chapter 795: Primordial Chaos (5)"
+    },
+    {
+      "file": "chapter-800.txt",
+      "chapter": 800,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 800 Chapter 796: Future King (1)"
+    },
+    {
+      "file": "chapter-801.txt",
+      "chapter": 801,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 801 Chapter 797: Future King (2)"
+    },
+    {
+      "file": "chapter-802.txt",
+      "chapter": 802,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 802 Chapter 798: Future King (3)"
+    },
+    {
+      "file": "chapter-803.txt",
+      "chapter": 803,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 803 ﻿Chapter 799: Future King (4)"
+    },
+    {
+      "file": "chapter-804.txt",
+      "chapter": 804,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 804 ﻿Chapter 800: Future King (5)"
+    },
+    {
+      "file": "chapter-805.txt",
+      "chapter": 805,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 805 ﻿Chapter 801: A Regressor's Tale of Cultivation"
+    },
+    {
+      "file": "chapter-806.txt",
+      "chapter": 806,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 806 ﻿Chapter 802: A Regressor's Tale of Cultivation"
+    },
+    {
+      "file": "chapter-807.txt",
+      "chapter": 807,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 807 Chapter 803: A Regressor's Tale of Cultivation"
+    },
+    {
+      "file": "chapter-808.txt",
+      "chapter": 808,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 804"
+    },
+    {
+      "file": "chapter-809.txt",
+      "chapter": 809,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 805"
+    },
+    {
+      "file": "chapter-810.txt",
+      "chapter": 810,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 806"
+    },
+    {
+      "file": "chapter-811.txt",
+      "chapter": 811,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 807"
+    },
+    {
+      "file": "chapter-812.txt",
+      "chapter": 812,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 808"
+    },
+    {
+      "file": "chapter-813.txt",
+      "chapter": 813,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 809"
+    },
+    {
+      "file": "chapter-814.txt",
+      "chapter": 814,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 810"
+    },
+    {
+      "file": "chapter-815.txt",
+      "chapter": 815,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 811"
+    },
+    {
+      "file": "chapter-816.txt",
+      "chapter": 816,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 812"
+    },
+    {
+      "file": "chapter-817.txt",
+      "chapter": 817,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 813"
+    },
+    {
+      "file": "chapter-818.txt",
+      "chapter": 818,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 814"
+    },
+    {
+      "file": "chapter-819.txt",
+      "chapter": 819,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 815"
+    },
+    {
+      "file": "chapter-820.txt",
+      "chapter": 820,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 816"
+    },
+    {
+      "file": "chapter-821.txt",
+      "chapter": 821,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 817"
+    },
+    {
+      "file": "chapter-822.txt",
+      "chapter": 822,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 818: Side Story - Talisman War Great Death Mausoleum (1)"
+    },
+    {
+      "file": "chapter-823.txt",
+      "chapter": 823,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 819: Side Story - Talisman War Great Death Mausoleum (2)"
+    },
+    {
+      "file": "chapter-824.txt",
+      "chapter": 824,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 820: New Fate and Upheaval (1)"
+    },
+    {
+      "file": "chapter-825.txt",
+      "chapter": 825,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 821: Side Story - New Fate and Upheaval (2)"
+    },
+    {
+      "file": "chapter-826.txt",
+      "chapter": 826,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 822: Side Story - New Fate and Upheaval (3)"
+    },
+    {
+      "file": "chapter-827.txt",
+      "chapter": 827,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 823: Side Story - Nation Founding (1)"
+    },
+    {
+      "file": "chapter-828.txt",
+      "chapter": 828,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 824: Side Story - Nation Founding (2)"
+    },
+    {
+      "file": "chapter-829.txt",
+      "chapter": 829,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 825: Side Story - Nation Founding (3)"
+    },
+    {
+      "file": "chapter-830.txt",
+      "chapter": 830,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 826: Side Story - Nation Founding (4)"
+    },
+    {
+      "file": "chapter-831.txt",
+      "chapter": 831,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 828: Side Story - Purple Gold Realm (1)"
+    },
+    {
+      "file": "chapter-832.txt",
+      "chapter": 832,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 829: Side Story - Purple Gold Realm (2)"
+    },
+    {
+      "file": "chapter-833.txt",
+      "chapter": 833,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 830: Side Story - Purple Gold Realm (3)"
+    },
+    {
+      "file": "chapter-834.txt",
+      "chapter": 834,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 831: Side Story - Ban Ta's Disciple."
+    },
+    {
+      "file": "chapter-835.txt",
+      "chapter": 835,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 832: Side Story - Being Ban Ta's Disciple (1)"
+    },
+    {
+      "file": "chapter-836.txt",
+      "chapter": 836,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 833: Side Story - Being Ban Ta's Disciple (2)"
+    },
+    {
+      "file": "chapter-837.txt",
+      "chapter": 837,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 834: Side Story - Being Ban Ta's Disciple (3)"
+    },
+    {
+      "file": "chapter-838.txt",
+      "chapter": 838,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 835: Side Story - Being Ban Ta's Disciple (4)"
+    },
+    {
+      "file": "chapter-839.txt",
+      "chapter": 839,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 836: Side Story - Mythical Relic (1)"
+    },
+    {
+      "file": "chapter-840.txt",
+      "chapter": 840,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 837: Side Story - Mythical Relic (2)"
+    },
+    {
+      "file": "chapter-841.txt",
+      "chapter": 841,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 838: Side Story - Mythical Relic (3)"
+    },
+    {
+      "file": "chapter-842.txt",
+      "chapter": 842,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 840: Side Story - Mythical Relic (5)"
+    },
+    {
+      "file": "chapter-843.txt",
+      "chapter": 843,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 841: Side Story - Mythical Relic (6)"
+    },
+    {
+      "file": "chapter-844.txt",
+      "chapter": 844,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 842: Side Story - Mythical Relic (7)"
+    },
+    {
+      "file": "chapter-845.txt",
+      "chapter": 845,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 843: Side Story - Perfect Harmony (1)"
+    },
+    {
+      "file": "chapter-846.txt",
+      "chapter": 846,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 844: Side Story - Perfect Harmony (2)"
+    },
+    {
+      "file": "chapter-847.txt",
+      "chapter": 847,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 845: Side Story - Perfect Harmony (3)"
+    },
+    {
+      "file": "chapter-848.txt",
+      "chapter": 848,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 846: Side Story - Path of Immortal Cultivation (1)"
+    },
+    {
+      "file": "chapter-849.txt",
+      "chapter": 849,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 847: Side Story - Path of Immortal Cultivation (2)"
+    },
+    {
+      "file": "chapter-850.txt",
+      "chapter": 850,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 848: Side Story - Employment Heavenly Lord (1)"
+    },
+    {
+      "file": "chapter-851.txt",
+      "chapter": 851,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 849: Side Story - Employment Heavenly Lord (2)"
+    },
+    {
+      "file": "chapter-852.txt",
+      "chapter": 852,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 850: Side Story - Employment Heavenly Lord (3)"
+    },
+    {
+      "file": "chapter-853.txt",
+      "chapter": 853,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 851: Side Story - Employment Heavenly Lord (4)"
+    },
+    {
+      "file": "chapter-854.txt",
+      "chapter": 854,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 852: Side Story - Anomalous Phenomena Management Bureau (1)"
+    },
+    {
+      "file": "chapter-855.txt",
+      "chapter": 855,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 853: Side Story - Anomalous Phenomena Management Bureau (2)"
+    },
+    {
+      "file": "chapter-856.txt",
+      "chapter": 856,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 854: Side Story - Anomalous Phenomena Management Bureau (3)"
+    },
+    {
+      "file": "chapter-857.txt",
+      "chapter": 857,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 855: Side Story - Anomalous Phenomena Management Bureau (4)"
+    },
+    {
+      "file": "chapter-858.txt",
+      "chapter": 858,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 856: Side Story - Island Survival (1)"
+    },
+    {
+      "file": "chapter-859.txt",
+      "chapter": 859,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 857: Side Story - Island Survival (2)"
+    },
+    {
+      "file": "chapter-860.txt",
+      "chapter": 860,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 858: Side Story - Island Survival (3)"
+    },
+    {
+      "file": "chapter-861.txt",
+      "chapter": 861,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 859: Side Story - Island Survival (4)"
+    },
+    {
+      "file": "chapter-862.txt",
+      "chapter": 862,
+      "title": "A Regressor’s Tale of Cultivation - Chapter 860: Side Story - Island Survival (5)"
+    }
+  ]
+}

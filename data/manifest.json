@@ -3,19 +3,35 @@
         "type": "txt",
         "file": "lainnya_formatting-guide.txt",
         "label": [
-            "Lainnya",
-            "Formatting",
             "Guide"
         ],
         "title": "Lainnya Formatting Guide"
     },
     {
         "type": "folder",
+        "folder": "a-regressors-tale-of-cultivation",
+        "index": "a-regressors-tale-of-cultivation/index.json",
+        "label": [
+            "Novel"
+        ],
+        "title": "A Regressors Tale Of Cultivation",
+        "count": 862
+    },
+    {
+        "type": "folder",
+        "folder": "lord-of-the-mysteries",
+        "index": "lord-of-the-mysteries/index.json",
+        "label": [
+            "Novel"
+        ],
+        "title": "Lord Of The Mysteries",
+        "count": 1432
+    },
+    {
+        "type": "folder",
         "folder": "reverend-insanity",
         "index": "reverend-insanity/index.json",
         "label": [
-            "Reverend",
-            "Insanity",
             "Novel"
         ],
         "title": "Reverend Insanity",
@@ -26,8 +42,6 @@
         "folder": "shadow-slave",
         "index": "shadow-slave/index.json",
         "label": [
-            "Shadow",
-            "Slave",
             "Novel"
         ],
         "title": "Shadow Slave",
