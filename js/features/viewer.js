@@ -128,7 +128,7 @@ async function openChapter(idx) {
         const displayTitle = title || ch.title || `Chapter ${ch.chapter ?? ""}`;
 
         showDoc();
-        renderChapter(displayTitle, body);
+        renderChapter(idx, displayTitle, body);
         window.scrollTo({ top: 0, behavior: "auto" });
     } catch (err) {
         console.error("Failed to read chapter:", err);
@@ -136,20 +136,45 @@ async function openChapter(idx) {
     }
 }
 
-function renderChapter(title, body) {
+function renderChapter(idx, title, body) {
     const host = document.getElementById("textView");
     if (!host) return;
 
+    const total = folderState.chapters.length;
+    const hasPrev = idx > 0;
+    const hasNext = idx < total - 1;
+
+    const nav = (position) => `
+        <nav class="chapter-nav chapter-nav--${position}">
+            <button type="button" class="chapter-nav__btn" data-nav="prev" ${hasPrev ? "" : "disabled"}>
+                ← Prev
+            </button>
+            <button type="button" class="chapter-nav__btn chapter-nav__list" data-nav="list">
+                Chapters
+            </button>
+            <button type="button" class="chapter-nav__btn" data-nav="next" ${hasNext ? "" : "disabled"}>
+                Next →
+            </button>
+        </nav>
+    `;
+
     host.innerHTML = `
         <article class="doc">
-            <button type="button" class="chapter-back" id="chapterBack">← Chapter list</button>
+            ${nav("top")}
             <h1 class="chapter-title">${escapeHtml(title)}</h1>
             <div class="chapter-body">${markupToHtml(body)}</div>
+            ${nav("bottom")}
         </article>
     `;
 
-    const back = document.getElementById("chapterBack");
-    if (back) back.addEventListener("click", renderChapterList);
+    host.querySelectorAll("[data-nav]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const action = btn.dataset.nav;
+            if (action === "prev" && hasPrev) openChapter(idx - 1);
+            else if (action === "next" && hasNext) openChapter(idx + 1);
+            else if (action === "list") renderChapterList();
+        });
+    });
 }
 
 // ======================================================

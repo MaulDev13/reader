@@ -170,24 +170,47 @@
 /* =========================================================
    CHAPTER CONTENT
    ========================================================= */
-.chapter-back {
-	display: inline-flex;
-	align-items: center;
-	margin-bottom: var(--space-md);
-	padding: var(--space-xs) var(--space-sm);
-	background: transparent;
-	border: 1px solid var(--border);
-	border-radius: var(--radius-sm);
-	color: var(--text-meta);
-	font-size: var(--text-sm);
-	cursor: pointer;
-	transition: border-color var(--transition-fast), color var(--transition-fast);
-}
-.chapter-back:hover { border-color: var(--primary); color: var(--text-title); }
-
 .chapter-title {
 	color: var(--text-title);
 	font-size: var(--text-2xl);
 	line-height: var(--leading-tight);
 	margin-bottom: var(--space-lg);
 }
+
+/* ---- Prev / Chapters / Next nav (above + below the chapter) ---- */
+.chapter-nav {
+	display: flex;
+	align-items: center;
+	gap: var(--space-sm);
+}
+.chapter-nav--top { margin-bottom: var(--space-lg); }
+.chapter-nav--bottom {
+	margin-top: var(--space-xl);
+	padding-top: var(--space-lg);
+	border-top: 1px solid var(--border);
+}
+
+.chapter-nav__btn {
+	flex: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--space-sm) var(--space-md);
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-sm);
+	color: var(--text-body);
+	font-size: var(--text-sm);
+	font-weight: var(--font-medium);
+	cursor: pointer;
+	transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+.chapter-nav__btn:hover:not(:disabled) {
+	border-color: var(--primary);
+	background: var(--surface-soft);
+	color: var(--text-title);
+}
+.chapter-nav__btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* The middle "Chapters" button stays compact; prev/next take the room. */
+.chapter-nav__list { flex: 0 0 auto; color: var(--text-meta); }
