@@ -20,7 +20,8 @@
 let folderState = {
     folder: null,
     label: "",
-    chapters: []   // [{ file, chapter, title }]
+    chapters: [],      // [{ file, chapter, title }]
+    lastReadIndex: null // index of the chapter last opened this session
 };
 
 // ======================================================
@@ -63,16 +64,57 @@ async function loadSingle(file) {
 async function loadFolder(folder) {
     try {
         const index = await fetchJson(`${CONFIG.BASE_PATH}data/${folder}/index.json`);
+        const chapters = Array.isArray(index.chapters) ? index.chapters : [];
+
         folderState = {
             folder,
             label: Array.isArray(index.label) ? index.label.join(" ") : folder,
-            chapters: Array.isArray(index.chapters) ? index.chapters : []
+            chapters,
+            lastReadIndex: resolveSavedIndex(folder, chapters)
         };
-        renderChapterList();
+
+        // If asked to jump straight into a specific chapter (from the home
+        // "Continue reading" list), open it; otherwise show the list.
+        const jump = window.__viewChapterIndex;
+        window.__viewChapterIndex = null;
+
+        if (typeof jump === "number" && chapters[jump]) {
+            openChapter(jump);
+        } else {
+            renderChapterList();
+        }
     } catch (err) {
         console.error("Failed to read folder index:", err);
         showError("Failed to load chapter list.");
     }
+}
+
+// Resolve the saved last-read chapter for a folder into a valid index.
+// Prefers the stored `index`, but re-validates against the current chapter
+// list by matching `file` (the index can shift if chapters were added).
+function resolveSavedIndex(folder, chapters) {
+    if (!window.History || !Array.isArray(chapters) || chapters.length === 0) {
+        return null;
+    }
+    const saved = window.History.get(folder);
+    if (!saved) return null;
+
+    // Trust the stored index only if the file at that position still matches.
+    if (
+        typeof saved.index === "number" &&
+        chapters[saved.index] &&
+        (!saved.file || chapters[saved.index].file === saved.file)
+    ) {
+        return saved.index;
+    }
+
+    // Otherwise find the chapter by file name.
+    if (saved.file) {
+        const i = chapters.findIndex(ch => ch.file === saved.file);
+        if (i !== -1) return i;
+    }
+
+    return null;
 }
 
 // ---- Chapter list ----
@@ -82,26 +124,64 @@ function renderChapterList() {
 
     showDoc();
 
-    const { label, chapters } = folderState;
+    const { label, chapters, lastReadIndex } = folderState;
 
-    const items = chapters.map((ch, i) => `
+    const items = chapters.map((ch, i) => {
+        const isLast = i === lastReadIndex;
+        return `
         <li class="chapter-item">
-            <button type="button" class="chapter-link" data-index="${i}">
+            <button type="button" class="chapter-link${isLast ? " is-last-read" : ""}" data-index="${i}">
                 <span class="chapter-link__no">${ch.chapter != null ? ch.chapter : ""}</span>
                 <span class="chapter-link__title">${escapeHtml(stripSeriesPrefix(ch.title, label))}</span>
+                ${isLast ? `<span class="chapter-link__tag">reading</span>` : ""}
             </button>
-        </li>
-    `).join("");
+        </li>`;
+    }).join("");
+
+    // Progress controls: resume where you left off + forget this book's progress.
+    // Shown only when there is saved history for the current book.
+    let progress = "";
+    const last = chapters[lastReadIndex];
+    const hasSaved = !!(window.History && folderState.folder && window.History.get(folderState.folder));
+    if (last) {
+        progress = `
+            <div class="chapter-progress">
+                <button type="button" class="chapter-resume" id="chapterResume">
+                    ↩ Return to ${escapeHtml(
+                        stripSeriesPrefix(last.title, label) ||
+                        `Chapter ${last.chapter ?? ""}`
+                    )}
+                </button>
+                ${hasSaved ? `<button type="button" class="chapter-forget" id="chapterForget">Forget progress</button>` : ""}
+            </div>
+        `;
+    }
 
     host.innerHTML = `
         <div class="chapter-list">
             <header class="chapter-list__head">
                 <h1>${escapeHtml(label)}</h1>
                 <p class="text-meta">${chapters.length} chapter${chapters.length === 1 ? "" : "s"}</p>
+                ${progress}
             </header>
             <ol class="chapter-list__items">${items}</ol>
         </div>
     `;
+
+    const resumeBtn = document.getElementById("chapterResume");
+    if (resumeBtn) {
+        resumeBtn.addEventListener("click", () => openChapter(lastReadIndex));
+    }
+
+    const forgetBtn = document.getElementById("chapterForget");
+    if (forgetBtn) {
+        forgetBtn.addEventListener("click", () => {
+            if (!window.confirm(`Forget your progress in ${label}?`)) return;
+            if (window.History) window.History.remove(folderState.folder);
+            folderState.lastReadIndex = null;
+            renderChapterList();
+        });
+    }
 
     host.querySelectorAll(".chapter-link").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -109,12 +189,30 @@ function renderChapterList() {
             openChapter(idx);
         });
     });
+
+    // Bring the last-read chapter into view so you land near where you were.
+    if (last) {
+        const el = host.querySelector(".chapter-link.is-last-read");
+        if (el) el.scrollIntoView({ block: "center" });
+    }
 }
 
 // ---- Chapter content ----
 async function openChapter(idx) {
     const ch = folderState.chapters[idx];
     if (!ch) return;
+
+    folderState.lastReadIndex = idx;
+
+    // Persist progress so home "Continue reading" and resume survive reloads.
+    if (window.History && folderState.folder) {
+        window.History.set(folderState.folder, {
+            index: idx,
+            file: ch.file,
+            chapter: ch.chapter ?? null,
+            title: ch.title || ""
+        });
+    }
 
     const host = document.getElementById("textView");
     if (host) host.innerHTML = `<p class="text-meta">Loading chapter...</p>`;

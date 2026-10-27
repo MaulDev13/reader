@@ -5,6 +5,15 @@
         <p>Pick a category to browse the available documents and books.</p>
     </div>
 
+    <!-- Continue reading — built from local history + manifest. Hidden when empty. -->
+    <section id="continueReading" class="continue hidden">
+        <div class="continue__head">
+            <h2 class="continue__title">Continue reading</h2>
+            <button type="button" class="continue__clear" id="continueClear">Clear all</button>
+        </div>
+        <div class="continue__list" id="continueList"></div>
+    </section>
+
     <!-- Cards are built from data/library.json by the script below. -->
     <div class="card-group category-grid" id="categoryGrid">
         <p class="text-meta">Loading library...</p>
@@ -81,5 +90,109 @@
             console.error("Failed to load library.json:", err);
             grid.innerHTML = `<p class="text-meta">Failed to load library.</p>`;
         });
+
+    // ---- Continue reading (local history) ----
+    (function buildContinue() {
+        const section = document.getElementById("continueReading");
+        const list = document.getElementById("continueList");
+        const clearBtn = document.getElementById("continueClear");
+        if (!section || !list || !window.History) return;
+
+        function stripSeriesPrefix(title, series) {
+            if (!title) return "";
+            if (!series) return title;
+            const esc = series.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            const re = new RegExp(`^\\s*${esc}\\s*[-–:]\\s*`, "i");
+            return title.replace(re, "").trim() || title;
+        }
+
+        function timeAgo(ms) {
+            if (!ms) return "";
+            const s = Math.floor((Date.now() - ms) / 1000);
+            if (s < 60) return "just now";
+            const m = Math.floor(s / 60);
+            if (m < 60) return `${m}m ago`;
+            const h = Math.floor(m / 60);
+            if (h < 24) return `${h}h ago`;
+            const d = Math.floor(h / 24);
+            if (d < 30) return `${d}d ago`;
+            return new Date(ms).toLocaleDateString();
+        }
+
+        function render(manifestByFolder) {
+            const entries = window.History.list();
+            list.innerHTML = "";
+
+            if (!entries.length) {
+                section.classList.add("hidden");
+                return;
+            }
+            section.classList.remove("hidden");
+
+            entries.forEach(entry => {
+                const info = manifestByFolder[entry.folder];
+                // Skip books that no longer exist in the manifest.
+                if (!info) return;
+
+                const bookTitle = info.title || entry.folder;
+                const chapterText = entry.chapter != null
+                    ? `Chapter ${entry.chapter}`
+                    : stripSeriesPrefix(entry.title, bookTitle) || "Resume";
+
+                const card = document.createElement("div");
+                card.className = "continue-card";
+
+                card.innerHTML = `
+                    <button type="button" class="continue-card__open">
+                        <span class="continue-card__title">${escapeHtml(bookTitle)}</span>
+                        <span class="continue-card__meta">
+                            <span class="continue-card__chapter">${escapeHtml(chapterText)}</span>
+                            <span class="continue-card__time">${escapeHtml(timeAgo(entry.at))}</span>
+                        </span>
+                    </button>
+                    <button type="button" class="continue-card__remove" title="Remove" aria-label="Remove">✕</button>
+                `;
+
+                card.querySelector(".continue-card__open").addEventListener("click", () => {
+                    if (typeof window.openFolderAt === "function") {
+                        window.openFolderAt(entry.folder, entry.index);
+                    }
+                });
+                card.querySelector(".continue-card__remove").addEventListener("click", () => {
+                    window.History.remove(entry.folder);
+                    render(manifestByFolder);
+                });
+
+                list.appendChild(card);
+            });
+
+            // Nothing matched the manifest -> hide.
+            if (!list.children.length) section.classList.add("hidden");
+        }
+
+        clearBtn.addEventListener("click", () => {
+            const n = window.History.list().length;
+            const msg = n > 1
+                ? `Clear reading history for all ${n} books?`
+                : "Clear your reading history?";
+            if (!window.confirm(msg)) return;
+            window.History.clear();
+            render({});
+        });
+
+        fetch(`${base}data/manifest.json`)
+            .then(res => res.ok ? res.json() : [])
+            .then(items => {
+                const byFolder = {};
+                (Array.isArray(items) ? items : []).forEach(it => {
+                    if (it.type === "folder" && it.folder) byFolder[it.folder] = it;
+                });
+                render(byFolder);
+            })
+            .catch(err => {
+                console.error("Failed to load manifest for history:", err);
+                section.classList.add("hidden");
+            });
+    })();
 })();
 </script>

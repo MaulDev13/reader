@@ -64,9 +64,16 @@
     }
 
     function openFolder(item) {
-        // The viewer loads the folder's index.json and shows its sidebar.
-        window.__viewFolder = item.folder;
+        openFolderAt(item.folder, null);
+    }
+
+    // Open a book folder, optionally jumping straight to a chapter index.
+    // Exposed globally so the home "Continue reading" list can reuse it.
+    function openFolderAt(folder, chapterIndex) {
+        window.__viewFolder = folder;
         window.__viewFile = null;
+        window.__viewChapterIndex =
+            typeof chapterIndex === "number" ? chapterIndex : null;
 
         htmx.ajax("GET", "/pages/viewer.html", {
             target: "#content",
@@ -135,4 +142,5 @@
 
     // Expose globally for inline use in home.html
     window.renderCategoryList = renderCategoryList;
+    window.openFolderAt = openFolderAt;
 })();

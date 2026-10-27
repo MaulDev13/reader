@@ -105,3 +105,96 @@
 		to   { opacity: 1; transform: translateY(0); }
 	}
 }
+
+/* =========================================================
+   CONTINUE READING (home, from local history)
+   ========================================================= */
+.continue { display: flex; flex-direction: column; gap: var(--space-md); }
+
+.continue__head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-md);
+}
+.continue__title {
+	font-size: var(--text-lg);
+	color: var(--text-title);
+}
+.continue__clear {
+	background: none;
+	border: none;
+	color: var(--text-meta);
+	font-size: var(--text-xs);
+	cursor: pointer;
+	padding: 0;
+}
+.continue__clear:hover { color: var(--primary); text-decoration: underline; }
+
+.continue__list {
+	display: grid;
+	gap: var(--space-sm);
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.continue-card {
+	position: relative;
+	display: flex;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+.continue-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+
+.continue-card__open {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: var(--space-md);
+	padding-right: var(--space-xl);
+	background: transparent;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	color: var(--text-body);
+}
+.continue-card__title {
+	font-weight: var(--font-semibold);
+	color: var(--text-title);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.continue-card__meta {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-sm);
+	font-size: var(--text-sm);
+}
+.continue-card__chapter { color: var(--primary); font-weight: var(--font-medium); }
+.continue-card__time { color: var(--text-meta); font-size: var(--text-xs); flex-shrink: 0; }
+
+.continue-card__remove {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: none;
+	border-radius: var(--radius-full);
+	color: var(--text-meta);
+	font-size: var(--text-xs);
+	line-height: 1;
+	cursor: pointer;
+	transition: background var(--transition-fast), color var(--transition-fast);
+}
+.continue-card__remove:hover { background: var(--surface-soft); color: var(--text-title); }
