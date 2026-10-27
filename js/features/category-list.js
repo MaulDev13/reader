@@ -1,9 +1,15 @@
 // ======================================================
 // CATEGORY LIST (reusable)
-// Reads data/manifest.json once and renders the files that
+// Reads data/manifest.json once and renders the entries that
 // match a category into a target element as clickable items.
-// Replaces the old per-category content pages so the manifest
-// logic lives in exactly one place.
+//
+// A category is an ARRAY of label parts (e.g. ["Shadow","Slave"]).
+// An item matches when its `label` array contains EVERY part of
+// the category (option A matching).
+//
+// Two kinds of manifest entries are rendered:
+//   type "txt"    -> opens a single document in the viewer
+//   type "folder" -> opens the book (first chapter) with its sidebar
 // ======================================================
 
 (function () {
@@ -27,22 +33,40 @@
         return manifestPromise;
     }
 
-    function inferType(file) {
-        return file.toLowerCase().endsWith(".txt") ? "txt" : "csv";
+    // Normalize a category into an array of parts.
+    function toParts(category) {
+        if (Array.isArray(category)) return category;
+        if (typeof category === "string") {
+            // Accept a JSON array string or a single/space-separated value.
+            try {
+                const parsed = JSON.parse(category);
+                if (Array.isArray(parsed)) return parsed;
+            } catch { /* not JSON, fall through */ }
+            return category.split(/\s+/).filter(Boolean);
+        }
+        return [];
     }
 
-    function openFile(item) {
-        if (item.password) {
-            const entered = prompt("Enter password:");
-            if (entered === null) return;        // cancelled
-            if (entered !== item.password) {
-                alert("Incorrect password.");
-                return;
-            }
-        }
+    // Option A: item matches when its label contains every category part.
+    function matches(item, parts) {
+        if (!Array.isArray(item.label)) return false;
+        return parts.every(part => item.label.includes(part));
+    }
 
+    function openTxt(item) {
         window.__viewFile = item.file;
-        window.__viewType = item.type || inferType(item.file);
+        window.__viewFolder = null;
+
+        htmx.ajax("GET", "/pages/viewer.html", {
+            target: "#content",
+            swap: "innerHTML"
+        });
+    }
+
+    function openFolder(item) {
+        // The viewer loads the folder's index.json and shows its sidebar.
+        window.__viewFolder = item.folder;
+        window.__viewFile = null;
 
         htmx.ajax("GET", "/pages/viewer.html", {
             target: "#content",
@@ -51,8 +75,8 @@
     }
 
     /**
-     * Render files for a category into a target element.
-     * @param {string} category  label to match (OR logic against item.label)
+     * Render entries for a category into a target element.
+     * @param {string|string[]} category  array of label parts (or string form)
      * @param {string|HTMLElement} target  element or its id
      */
     async function renderCategoryList(category, target) {
@@ -61,17 +85,16 @@
             : target;
         if (!host) return;
 
+        const parts = toParts(category);
         host.innerHTML = `<p class="text-meta">Loading...</p>`;
 
         try {
-            const files = await getManifest();
-            const matches = files.filter(item =>
-                Array.isArray(item.label) && item.label.includes(category)
-            );
+            const items = await getManifest();
+            const found = items.filter(item => matches(item, parts));
 
             host.innerHTML = "";
 
-            if (matches.length === 0) {
+            if (found.length === 0) {
                 host.innerHTML = `<p class="text-meta">No data available yet.</p>`;
                 return;
             }
@@ -79,22 +102,26 @@
             const list = document.createElement("div");
             list.className = "project-list";
 
-            matches.forEach(item => {
+            found.forEach(item => {
                 const btn = document.createElement("button");
                 btn.type = "button";
                 btn.className = "project-item";
-                if (item.password) btn.classList.add("project-item--locked");
 
                 const name = document.createElement("span");
-                name.textContent = item.label.join(" ");
-
-                const badge = document.createElement("span");
-                badge.className = "project-item__type";
-                badge.textContent = (item.type || inferType(item.file)).toUpperCase();
-
+                name.textContent = item.title || (item.label || []).join(" ");
                 btn.appendChild(name);
-                btn.appendChild(badge);
-                btn.addEventListener("click", () => openFile(item));
+
+                if (item.type === "folder") {
+                    // badge with chapter count
+                    const badge = document.createElement("span");
+                    badge.className = "project-item__count";
+                    badge.textContent =
+                        item.count != null ? `${item.count} ch` : "book";
+                    btn.appendChild(badge);
+                    btn.addEventListener("click", () => openFolder(item));
+                } else {
+                    btn.addEventListener("click", () => openTxt(item));
+                }
 
                 list.appendChild(btn);
             });

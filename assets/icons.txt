@@ -1,0 +1,59 @@
+# Icon Reference
+
+A flat list of emoji icons you can copy into `data/library.json` (the `icon`
+field of a home card). Each line is: icon — a short, general description.
+This file is a standalone reference and is not wired to anything.
+
+---
+
+## Books & reading
+📚 — stack of books / library, novels
+📖 — open book / guide, reading
+📗 📘 📙 — colored books / series, volumes
+📕 — closed red book / single title
+🔖 — bookmark / saved, favorites
+📜 — scroll / long text, lore
+📝 — memo / notes, drafts
+✍️ — writing / author, original work
+
+## Folders & files
+📁 — folder / collection, category
+📂 — open folder / browsing
+🗂️ — dividers / organized sections
+🗃️ — card box / archive
+📄 — plain document / single file
+📰 — newspaper / articles, news
+
+## Genre & mood
+⚔️ — swords / action, battle, war
+🐉 — dragon / fantasy, cultivation
+🔮 — crystal ball / magic, mystery
+🗡️ — dagger / thriller, assassins
+🌑 — new moon / dark, shadow themes
+🌟 — star / featured, highlights
+🔥 — fire / popular, trending, hot
+💀 — skull / horror, death, grim
+❤️ — heart / romance, favorites
+😂 — laughing / comedy, light reads
+🧭 — compass / adventure, journey
+🚀 — rocket / sci-fi, futuristic
+🏰 — castle / kingdom, medieval
+🌏 — globe / world, isekai, travel
+
+## Status & utility
+⭐ — star / rating, top picks
+🆕 — new / recently added
+✅ — check / completed, finished
+🔒 — lock / restricted, private
+🔎 — magnifier / search, browse
+⏳ — hourglass / ongoing, in progress
+📌 — pin / pinned, important
+🏷️ — tag / label, classification
+
+## Places & misc (general use)
+🏠 — house / home, housing
+☕ — coffee / cafe, casual
+🍜 — bowl / food, culinary
+💼 — briefcase / work, business
+🏨 — hotel / lodging, stays
+📍 — pin / location, other places

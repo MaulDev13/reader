@@ -1,0 +1,183 @@
+# Text Formatting Guide
+
+This file is a plain **.txt** document. Open it in any editor and it stays
+fully readable. The viewer adds a light *markup* layer on top so a `.txt`
+can have headings, emphasis, images, links, lists, quotes, and code — while
+the source remains plain text.
+
+Everything below is both the documentation *and* a live example: what you
+read here is produced by the exact syntax shown.
+
+---
+
+## 1. Headings
+
+Start a line with one to six `#` characters, then a space, then the text.
+More hashes = smaller heading.
+
+# H1 — biggest
+## H2 — section (gets an underline)
+### H3
+#### H4
+##### H5
+###### H6 — smallest / muted
+
+Note: the `#` must be followed by a space. `#NoSpace` is treated as a normal
+paragraph line.
+
+---
+
+## 2. Paragraphs and line breaks
+
+Leave a blank line between blocks to start a new paragraph.
+
+Lines that are next to each other (no blank line between them)
+are joined into the same paragraph, each on its own visual line.
+
+Put a blank line here ...
+
+... and you get a brand new paragraph.
+
+---
+
+## 3. Inline styles
+
+You can combine these inside any paragraph, heading, list item, or quote:
+
+- Bold with double asterisks: **like this**
+- Italic with single asterisks: *like this*
+- Inline code with backticks: `like_this()`
+- Mix them: a **bold `code`** word, or *italic with a [link](https://example.com)*
+
+Heads up: because `*` means italic, avoid using a single `*` as a bullet if the
+line also contains emphasis. Prefer `-` for bullets (see section 5).
+
+---
+
+## 4. Links
+
+Syntax: `[visible text](url)`
+
+- External: [open the live site](https://map-eta-coral.vercel.app/)
+- Links always open in a new tab.
+
+Allowed URLs: `http://`, `https://`, root-relative (`/path`), and relative
+paths (`data/x.csv`). Anything else (for example a `javascript:` URL) is
+rejected and shown as plain text — this is a safety feature.
+
+---
+
+## 5. Lists
+
+Start each line with `-` (recommended) or `*`, then a space:
+
+- First item
+- Second item
+- Items can contain **bold**, *italic*, `code`, and [links](https://example.com)
+- One level only (no nested/indented sub-lists yet)
+
+---
+
+## 6. Blockquotes
+
+Start a line with `>`. Consecutive `>` lines are merged into one quote:
+
+> Keep the source plain.
+> Let the viewer handle the styling.
+> Quotes can also contain **inline** *styles*.
+
+---
+
+## 7. Horizontal rule
+
+Put three or more dashes on their own line to draw a divider:
+
+```
+---
+```
+
+It renders like the separators between each section of this guide.
+
+---
+
+## 8. Images
+
+Syntax: `![alt text](source)`
+
+From the local assets folder (path is relative to the site root, so it works
+on localhost, Vercel, and GitHub Pages automatically):
+
+![CV avatar](assets/cv_avatar.jpg)
+
+From any URL:
+
+![Random placeholder](https://picsum.photos/480/200)
+
+Tips:
+- An image alone on its own line is centered and gets a soft shadow.
+- An image inside a sentence stays inline with the text.
+- `alt text` is shown by screen readers and if the image fails to load.
+
+---
+
+## 9. Code / fixed-width blocks
+
+Wrap lines between a pair of triple backticks. Everything inside is shown
+exactly as typed (no markup is applied), in a monospaced box — ideal for
+tables, ASCII art, or commands:
+
+```
+NAME      CITY        ROLE
+Maul      Bandung     Developer
+Siti      Surabaya    Designer
+Budi      Jakarta     Analyst
+```
+
+```
+┌───────┬───────┐
+│   A   │   B   │
+├───────┼───────┤
+│   C   │   D   │
+└───────┴───────┘
+```
+
+---
+
+## 10. Safety (why some things show as plain text)
+
+The viewer escapes everything first, then only adds the specific tags above.
+So raw HTML never runs — for example this stays harmless, visible text:
+
+```
+<script>alert("hi")</script>
+```
+
+---
+
+## 11. Quick reference
+
+```
+# .. ######      headings (space required after #)
+**bold**         bold
+*italic*         italic
+`code`           inline code
+[text](url)      link (opens new tab)
+![alt](src)      image (assets path or URL)
+- item           bullet list item
+> quote          blockquote
+---              horizontal rule
+``` fence ```    code / fixed-width block
+blank line       new paragraph
+```
+
+---
+
+## 12. Add your own document
+
+1. Create a `.txt` file in the `/data` folder.
+2. Name it so the first word matches a home category if you want it grouped,
+   for example `lainnya_my-doc.txt` shows under "Tempat Lainnya".
+3. Run `npm run manifest` to register it.
+4. Reload — your document appears with a `TXT` badge.
+
+Happy writing.

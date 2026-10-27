@@ -1,71 +1,234 @@
 // ======================================================
-// GENERALIST VIEWER (view-only)
-// Dispatches by file type: csv -> sortable table, txt -> preformatted text.
-// The selected file + type are passed via window.__viewFile / window.__viewType,
-// set by the navbar / content pages before the viewer page is swapped in.
+// VIEWER (view-only)
+//
+// Three states, chosen from globals set before the viewer
+// page is swapped in:
+//
+//   window.__viewFile   -> a loose .txt file in /data
+//                          Rendered as a single document.
+//
+//   window.__viewFolder -> a folder (book) in /data
+//                          Loads <folder>/index.json and shows the
+//                          chapter list. Clicking a chapter renders
+//                          that chapter (title + content only).
+//
+// Chapter files carry a front-matter block (--- ... ---). Only the
+// `title` is shown; the rest of the metadata is stripped.
 // ======================================================
 
-// Columns hidden by default on first CSV load (optional).
-const DEFAULT_HIDDEN_COLUMNS = [];
-
-// CSV delimiter: "auto" detects from the header line.
-const CSV_DELIMITER = "auto";
-
-// ---- CSV sort state ----
-let currentHeaders = [];
-let originalData = [];
-let sortState = { colIndex: null, direction: null }; // "asc" | "desc" | null
+// Folder reading state (populated in folder mode).
+let folderState = {
+    folder: null,
+    label: "",
+    chapters: []   // [{ file, chapter, title }]
+};
 
 // ======================================================
 // ENTRY POINT
 // ======================================================
 async function loadView() {
+    const folder = window.__viewFolder;
     const file = window.__viewFile;
-    const type = window.__viewType || inferType(file);
 
-    if (!file) {
-        console.warn("No file selected to view.");
+    if (folder) {
+        await loadFolder(folder);
         return;
     }
 
+    if (file) {
+        await loadSingle(file);
+        return;
+    }
+
+    console.warn("Nothing selected to view.");
+}
+
+// ======================================================
+// SINGLE DOCUMENT (loose .txt)
+// ======================================================
+async function loadSingle(file) {
     try {
-        const url = `${CONFIG.BASE_PATH}data/${file}`;
-        console.log(`Reading: ${url} [${type}]`);
-
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const text = await response.text();
-
-        if (type === "txt") {
-            renderText(text);
-        } else {
-            renderCsv(text);
-        }
+        const text = await fetchText(`${CONFIG.BASE_PATH}data/${file}`);
+        showDoc();
+        renderDoc(text);
     } catch (err) {
         console.error("Failed to read file:", err);
+        showError("Failed to load document.");
     }
 }
 
-// Fallback type detection from extension.
-function inferType(file) {
-    if (!file) return "csv";
-    return file.toLowerCase().endsWith(".txt") ? "txt" : "csv";
+// ======================================================
+// FOLDER (book) — chapter list + chapter content
+// ======================================================
+async function loadFolder(folder) {
+    try {
+        const index = await fetchJson(`${CONFIG.BASE_PATH}data/${folder}/index.json`);
+        folderState = {
+            folder,
+            label: Array.isArray(index.label) ? index.label.join(" ") : folder,
+            chapters: Array.isArray(index.chapters) ? index.chapters : []
+        };
+        renderChapterList();
+    } catch (err) {
+        console.error("Failed to read folder index:", err);
+        showError("Failed to load chapter list.");
+    }
 }
 
-// ======================================================
-// TXT VIEWER
-// ======================================================
-function renderText(text) {
-    setTableVisible(false);
-
+// ---- Chapter list ----
+function renderChapterList() {
     const host = document.getElementById("textView");
     if (!host) return;
 
-    host.classList.remove("hidden");
+    showDoc();
+
+    const { label, chapters } = folderState;
+
+    const items = chapters.map((ch, i) => `
+        <li class="chapter-item">
+            <button type="button" class="chapter-link" data-index="${i}">
+                <span class="chapter-link__no">${ch.chapter != null ? ch.chapter : ""}</span>
+                <span class="chapter-link__title">${escapeHtml(stripSeriesPrefix(ch.title, label))}</span>
+            </button>
+        </li>
+    `).join("");
+
+    host.innerHTML = `
+        <div class="chapter-list">
+            <header class="chapter-list__head">
+                <h1>${escapeHtml(label)}</h1>
+                <p class="text-meta">${chapters.length} chapter${chapters.length === 1 ? "" : "s"}</p>
+            </header>
+            <ol class="chapter-list__items">${items}</ol>
+        </div>
+    `;
+
+    host.querySelectorAll(".chapter-link").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const idx = Number(btn.dataset.index);
+            openChapter(idx);
+        });
+    });
+}
+
+// ---- Chapter content ----
+async function openChapter(idx) {
+    const ch = folderState.chapters[idx];
+    if (!ch) return;
+
+    const host = document.getElementById("textView");
+    if (host) host.innerHTML = `<p class="text-meta">Loading chapter...</p>`;
+
+    try {
+        const raw = await fetchText(
+            `${CONFIG.BASE_PATH}data/${folderState.folder}/${ch.file}`
+        );
+
+        const { title, body } = splitFrontMatter(raw);
+        const displayTitle = title || ch.title || `Chapter ${ch.chapter ?? ""}`;
+
+        showDoc();
+        renderChapter(displayTitle, body);
+        window.scrollTo({ top: 0, behavior: "auto" });
+    } catch (err) {
+        console.error("Failed to read chapter:", err);
+        showError("Failed to load chapter.");
+    }
+}
+
+function renderChapter(title, body) {
+    const host = document.getElementById("textView");
+    if (!host) return;
+
+    host.innerHTML = `
+        <article class="doc">
+            <button type="button" class="chapter-back" id="chapterBack">← Chapter list</button>
+            <h1 class="chapter-title">${escapeHtml(title)}</h1>
+            <div class="chapter-body">${markupToHtml(body)}</div>
+        </article>
+    `;
+
+    const back = document.getElementById("chapterBack");
+    if (back) back.addEventListener("click", renderChapterList);
+}
+
+// ======================================================
+// FRONT-MATTER
+// ======================================================
+// Split a chapter into its front-matter title and the body that
+// follows the closing `---`. Only `title` is extracted; everything
+// else in the metadata block is discarded.
+function splitFrontMatter(raw) {
+    const text = String(raw).replace(/\r\n?/g, "\n");
+    const lines = text.split("\n");
+
+    let i = 0;
+    while (i < lines.length && lines[i].trim() === "") i++;
+
+    // No opening fence -> no front-matter; whole thing is the body.
+    if (lines[i] === undefined || lines[i].trim() !== "---") {
+        return { title: "", body: text.trim() };
+    }
+
+    i++; // past opening ---
+    let title = "";
+
+    for (; i < lines.length; i++) {
+        if (lines[i].trim() === "---") { i++; break; } // closing fence
+        const m = lines[i].match(/^\s*title\s*:\s*(.*)$/i);
+        if (m) {
+            title = m[1].trim().replace(/^["']|["']$/g, "");
+        }
+    }
+
+    const body = lines.slice(i).join("\n").trim();
+    return { title, body };
+}
+
+// Chapter titles often repeat the series name, e.g.
+// "Shadow Slave - Chapter 1 - 1: Nightmare Begins". Trim a leading
+// "<series> - " so the list/heading reads cleanly. Falls back to the
+// full title if nothing matches.
+function stripSeriesPrefix(title, seriesLabel) {
+    if (!title) return "";
+    if (!seriesLabel) return title;
+    const re = new RegExp(`^\\s*${escapeRegExp(seriesLabel)}\\s*[-–:]\\s*`, "i");
+    return title.replace(re, "").trim() || title;
+}
+
+function escapeRegExp(s) {
+    return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// ======================================================
+// VIEW HELPERS
+// ======================================================
+function showDoc() {
+    const host = document.getElementById("textView");
+    if (host) host.classList.remove("hidden");
+}
+
+function renderDoc(text) {
+    const host = document.getElementById("textView");
+    if (!host) return;
     host.innerHTML = `<article class="doc">${markupToHtml(text)}</article>`;
+}
+
+function showError(message) {
+    const host = document.getElementById("textView");
+    if (host) host.innerHTML = `<p class="text-meta">${escapeHtml(message)}</p>`;
+}
+
+async function fetchText(url) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+}
+
+async function fetchJson(url) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.json();
 }
 
 // ------------------------------------------------------
@@ -78,7 +241,7 @@ function renderText(text) {
 // ------------------------------------------------------
 
 function escapeHtml(s) {
-    return s
+    return String(s)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -229,295 +392,4 @@ function markupToHtml(src) {
 
     flushAll();
     return out.join("\n");
-}
-
-// ======================================================
-// CSV VIEWER
-// ======================================================
-function getDelimiter(headerLine) {
-    if (CSV_DELIMITER !== "auto") return CSV_DELIMITER;
-    const commaCount = (headerLine.match(/,/g) || []).length;
-    const semicolonCount = (headerLine.match(/;/g) || []).length;
-    return semicolonCount > commaCount ? ";" : ",";
-}
-
-function renderCsv(csv) {
-    setTableVisible(true);
-
-    const textHost = document.getElementById("textView");
-    if (textHost) textHost.classList.add("hidden");
-
-    const rows = csv.trim().split(/\r?\n/); // Windows & Unix line endings
-    const delimiter = getDelimiter(rows[0]);
-    const headers = rows[0].split(delimiter).map(h => h.trim());
-    const data = rows.slice(1).map(row => row.split(delimiter).map(cell => cell.trim()));
-
-    currentHeaders = headers;
-    originalData = data;
-    sortState = { colIndex: null, direction: null };
-
-    createTable(headers, data);
-    updateSortIndicators();
-}
-
-function isUrl(text) {
-    return /^https?:\/\//i.test(text.trim());
-}
-
-function truncate(text, maxLength = 20) {
-    return text.length <= maxLength ? text : text.slice(0, maxLength) + "...";
-}
-
-// Turn a raw CSV header into a human-readable label.
-// Handles camelCase/PascalCase, snake_case, kebab-case, and dotted names.
-// Display-only: sorting/column logic always uses the column index.
-function humanizeHeader(header) {
-    if (!header) return "";
-    return String(header)
-        .trim()
-        .replace(/[_\-.]+/g, " ")              // snake_case, kebab-case, dotted -> spaces
-        .replace(/([a-z\d])([A-Z])/g, "$1 $2") // camelCase boundary: aB -> a B
-        .replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2") // acronym boundary: HTTPServer -> HTTP Server
-        .replace(/\s+/g, " ")                  // collapse repeats
-        .trim()
-        .replace(/\b\w/g, c => c.toUpperCase()); // Title Case each word
-}
-
-function compareValues(a, b) {
-    const aClean = a.trim().replace(/,/g, "");
-    const bClean = b.trim().replace(/,/g, "");
-    const aNum = parseFloat(aClean);
-    const bNum = parseFloat(bClean);
-    const bothNumeric =
-        !isNaN(aNum) && !isNaN(bNum) &&
-        /^-?\d+(\.\d+)?$/.test(aClean) &&
-        /^-?\d+(\.\d+)?$/.test(bClean);
-
-    if (bothNumeric) return aNum - bNum;
-    return a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" });
-}
-
-function getSortedData() {
-    const { colIndex, direction } = sortState;
-    if (colIndex === null || direction === null) return originalData;
-
-    return [...originalData].sort((rowA, rowB) => {
-        const a = rowA[colIndex] || "";
-        const b = rowB[colIndex] || "";
-        const cmp = compareValues(a, b);
-        return direction === "asc" ? cmp : -cmp;
-    });
-}
-
-// asc -> desc -> original -> asc ...
-function handleHeaderClick(colIndex) {
-    if (sortState.colIndex !== colIndex) {
-        sortState = { colIndex, direction: "asc" };
-    } else if (sortState.direction === "asc") {
-        sortState = { colIndex, direction: "desc" };
-    } else {
-        sortState = { colIndex: null, direction: null };
-    }
-
-    createTable(currentHeaders, getSortedData());
-    updateSortIndicators();
-}
-
-function updateSortIndicators() {
-    document.querySelectorAll("#tableData thead th").forEach(th => {
-        const idx = Number(th.dataset.colIndex);
-        th.classList.remove("sort-asc", "sort-desc");
-
-        const arrowEl = th.querySelector(".sort-arrow");
-        if (!arrowEl) return;
-
-        if (sortState.colIndex === idx && sortState.direction) {
-            arrowEl.textContent = sortState.direction === "asc" ? "▲" : "▼";
-            th.classList.add(sortState.direction === "asc" ? "sort-asc" : "sort-desc");
-        } else {
-            arrowEl.textContent = "";
-        }
-    });
-}
-
-function createTable(headers, data) {
-    const thead = document.querySelector("#tableData thead");
-    const tbody = document.querySelector("#tableData tbody");
-    if (!thead || !tbody) return;
-
-    thead.innerHTML = "";
-    tbody.innerHTML = "";
-
-    // Header
-    const trHead = document.createElement("tr");
-    headers.forEach((header, index) => {
-        const th = document.createElement("th");
-        th.dataset.colIndex = index;
-        th.dataset.label = header;
-        th.style.cursor = "pointer";
-        th.title = `${header} — click to sort`;
-
-        const labelSpan = document.createElement("span");
-        labelSpan.classList.add("th-label");
-        labelSpan.textContent = humanizeHeader(header);
-
-        const arrowSpan = document.createElement("span");
-        arrowSpan.classList.add("sort-arrow");
-        arrowSpan.textContent = "";
-
-        th.appendChild(labelSpan);
-        th.appendChild(arrowSpan);
-        th.addEventListener("click", () => handleHeaderClick(index));
-
-        trHead.appendChild(th);
-    });
-    thead.appendChild(trHead);
-
-    // Body
-    data.forEach(row => {
-        const tr = document.createElement("tr");
-
-        headers.forEach((_, index) => {
-            const td = document.createElement("td");
-            const rawValue = row[index] || "";
-            td.dataset.colIndex = index;
-
-            if (isUrl(rawValue)) {
-                const a = document.createElement("a");
-                a.href = rawValue;
-                a.textContent = "Link";
-                a.target = "_blank";
-                a.rel = "noopener noreferrer";
-                td.appendChild(a);
-            } else {
-                td.textContent = truncate(rawValue);
-                if (rawValue.length > 20) td.title = rawValue;
-            }
-
-            tr.appendChild(td);
-        });
-
-        tbody.appendChild(tr);
-    });
-
-    renderColumnToggles(headers);
-}
-
-function renderColumnToggles(headers) {
-    const container = document.getElementById("columnToggles");
-    if (!container) return;
-
-    container.innerHTML = "";
-    container.classList.add("column-panel");
-
-    // ---- Header: "Columns" label + Toggle all ----
-    const head = document.createElement("div");
-    head.classList.add("column-panel__head");
-
-    const label = document.createElement("span");
-    label.classList.add("column-panel__label");
-    label.textContent = "Columns";
-
-    const toggleAllLabel = document.createElement("label");
-    toggleAllLabel.classList.add("column-toggle-all");
-
-    const toggleAllCheckbox = document.createElement("input");
-    toggleAllCheckbox.type = "checkbox";
-    toggleAllCheckbox.id = "toggleAllColumns";
-
-    const toggleAllText = document.createElement("span");
-    toggleAllText.textContent = "Toggle all";
-
-    toggleAllLabel.appendChild(toggleAllCheckbox);
-    toggleAllLabel.appendChild(toggleAllText);
-
-    head.appendChild(label);
-    head.appendChild(toggleAllLabel);
-    container.appendChild(head);
-
-    // ---- Pills ----
-    const pills = document.createElement("div");
-    pills.classList.add("column-pills");
-    container.appendChild(pills);
-
-    headers.forEach((header, index) => {
-        const isHiddenByDefault = DEFAULT_HIDDEN_COLUMNS.includes(header);
-
-        const pill = document.createElement("label");
-        pill.classList.add("column-pill");
-        pill.classList.toggle("is-on", !isHiddenByDefault);
-        pill.title = header;
-
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.checked = !isHiddenByDefault;
-        checkbox.dataset.colIndex = index;
-        checkbox.classList.add("column-checkbox");
-
-        const dot = document.createElement("span");
-        dot.classList.add("column-pill__dot");
-
-        const text = document.createElement("span");
-        text.classList.add("column-pill__text");
-        text.textContent = humanizeHeader(header);
-
-        checkbox.addEventListener("change", (e) => {
-            const on = e.target.checked;
-            pill.classList.toggle("is-on", on);
-            toggleColumn(index, on);
-            updateToggleAllState();
-        });
-
-        pill.appendChild(checkbox);
-        pill.appendChild(dot);
-        pill.appendChild(text);
-        pills.appendChild(pill);
-
-        if (isHiddenByDefault) toggleColumn(index, false);
-    });
-
-    toggleAllCheckbox.addEventListener("change", (e) => {
-        const checked = e.target.checked;
-        container.querySelectorAll(".column-pill").forEach(pill => {
-            const cb = pill.querySelector(".column-checkbox");
-            cb.checked = checked;
-            pill.classList.toggle("is-on", checked);
-            toggleColumn(Number(cb.dataset.colIndex), checked);
-        });
-        toggleAllCheckbox.indeterminate = false;
-    });
-
-    updateToggleAllState();
-}
-
-function updateToggleAllState() {
-    const toggleAllCheckbox = document.getElementById("toggleAllColumns");
-    if (!toggleAllCheckbox) return;
-
-    const checkboxes = document.querySelectorAll("#columnToggles .column-checkbox");
-    const total = checkboxes.length;
-    const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
-
-    if (checkedCount === 0) {
-        toggleAllCheckbox.checked = false;
-        toggleAllCheckbox.indeterminate = false;
-    } else if (checkedCount === total) {
-        toggleAllCheckbox.checked = true;
-        toggleAllCheckbox.indeterminate = false;
-    } else {
-        toggleAllCheckbox.checked = false;
-        toggleAllCheckbox.indeterminate = true;
-    }
-}
-
-function toggleColumn(colIndex, show) {
-    document
-        .querySelectorAll(`#tableData [data-col-index="${colIndex}"]`)
-        .forEach(cell => { cell.style.display = show ? "" : "none"; });
-}
-
-// Show/hide the whole table shell (search + toggles + table) for non-CSV views.
-function setTableVisible(visible) {
-    const shell = document.getElementById("tableShell");
-    if (shell) shell.classList.toggle("hidden", !visible);
 }

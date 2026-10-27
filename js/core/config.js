@@ -6,7 +6,7 @@ window.CONFIG = {
         ?.getAttribute("content") || "",
 
     // BASE_PATH is the site root. It is ALWAYS either "" or a path that
-    // ends with "/", so callers can safely do `${BASE_PATH}data/x.csv`
+    // ends with "/", so callers can safely do `${BASE_PATH}data/x.txt`
     // (relative-style) and the router can do `${BASE_PATH}pages/x.html`.
     BASE_PATH: (() => {
         const host = location.hostname;

@@ -1,5 +1,8 @@
 {
     "scripts": {
-        "manifest": "node scripts/generate-data.js"
+        "manifest": "node scripts/generate-data.js",
+        "manifest:only": "node scripts/generate-data.js --manifest-only",
+        "library": "node scripts/generate-data.js --library-only",
+        "library:example": "node scripts/generate-data.js --library-example"
     }
 }

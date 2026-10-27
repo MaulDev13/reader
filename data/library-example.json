@@ -1,0 +1,20 @@
+[
+    {
+        "category": [
+            "Reverend",
+            "Insanity"
+        ],
+        "icon": "📁",
+        "title": "Reverend Insanity",
+        "description": "Chapters from reverend-insanity"
+    },
+    {
+        "category": [
+            "Shadow",
+            "Slave"
+        ],
+        "icon": "📁",
+        "title": "Shadow Slave",
+        "description": "Chapters from shadow-slave"
+    }
+]

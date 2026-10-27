@@ -1,0 +1,14 @@
+[
+    {
+        "category": ["Novel"],
+        "icon": "📚",
+        "title": "Novels",
+        "description": "Long-form story with chapters"
+    },
+    {
+        "category": ["Guide"],
+        "icon": "📖",
+        "title": "Guides",
+        "description": "How-to and reference documents"
+    }
+]

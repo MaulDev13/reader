@@ -1,87 +1,85 @@
 <section id="home-page" class="page-stack">
 
     <div class="card hero-card">
-        <h1>🇮🇩 Temukan Tempat Terbaik di Indonesia</h1>
-        <p>
-            Jelajahi rekomendasi tempat dari berbagai kota di Indonesia.
-            Pilih kategori di bawah untuk melihat daftar data yang tersedia.
-        </p>
+        <h1>📚 Reader</h1>
+        <p>Pick a category to browse the available documents and books.</p>
     </div>
 
-    <div class="card-group category-grid">
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Kos" onclick="toggleCategory(this)">
-                <span class="category__icon">🏠</span>
-                <span class="category__title">
-                    <strong>Kos</strong>
-                    <span class="text-meta">Kos putra, putri, dan campur</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Cafe" onclick="toggleCategory(this)">
-                <span class="category__icon">☕</span>
-                <span class="category__title">
-                    <strong>Cafe</strong>
-                    <span class="text-meta">Tempat nongkrong dan kerja</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Kuliner" onclick="toggleCategory(this)">
-                <span class="category__icon">🍜</span>
-                <span class="category__title">
-                    <strong>Kuliner</strong>
-                    <span class="text-meta">Restoran dan street food</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Coworking" onclick="toggleCategory(this)">
-                <span class="category__icon">💼</span>
-                <span class="category__title">
-                    <strong>Coworking Space</strong>
-                    <span class="text-meta">Ruang kerja dan meeting</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Penginapan" onclick="toggleCategory(this)">
-                <span class="category__icon">🏨</span>
-                <span class="category__title">
-                    <strong>Penginapan</strong>
-                    <span class="text-meta">Hotel, homestay, dan villa</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
-        <div class="card category" data-reveal>
-            <button class="category__head" type="button" data-category="Lainnya" onclick="toggleCategory(this)">
-                <span class="category__icon">📍</span>
-                <span class="category__title">
-                    <strong>Tempat Lainnya</strong>
-                    <span class="text-meta">Masjid, taman, gym, dll.</span>
-                </span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="project-content hidden"></div>
-        </div>
-
+    <!-- Cards are built from data/library.json by the script below. -->
+    <div class="card-group category-grid" id="categoryGrid">
+        <p class="text-meta">Loading library...</p>
     </div>
 
 </section>
+
+<script>
+(function () {
+    const grid = document.getElementById("categoryGrid");
+    if (!grid) return;
+
+    const base = (window.CONFIG && CONFIG.BASE_PATH) || "";
+
+    function escapeHtml(s) {
+        return String(s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
+    function renderCards(cards) {
+        grid.innerHTML = "";
+
+        if (!Array.isArray(cards) || cards.length === 0) {
+            grid.innerHTML = `<p class="text-meta">No categories configured yet.</p>`;
+            return;
+        }
+
+        cards.forEach(card => {
+            // category may be an array of label parts or a single string.
+            const category = Array.isArray(card.category)
+                ? card.category
+                : (card.category ? [card.category] : []);
+            const icon = card.icon || "📁";
+            const title = card.title || category.join(" ");
+            const description = card.description || "";
+
+            const el = document.createElement("div");
+            el.className = "card category";
+            el.setAttribute("data-reveal", "");
+
+            // Store the category array as JSON so renderCategoryList can
+            // match against the manifest label arrays.
+            const categoryJson = escapeHtml(JSON.stringify(category));
+
+            el.innerHTML = `
+                <button class="category__head" type="button"
+                        data-category="${categoryJson}"
+                        onclick="toggleCategory(this)">
+                    <span class="category__icon">${escapeHtml(icon)}</span>
+                    <span class="category__title">
+                        <strong>${escapeHtml(title)}</strong>
+                        <span class="text-meta">${escapeHtml(description)}</span>
+                    </span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="project-content hidden"></div>
+            `;
+
+            grid.appendChild(el);
+        });
+    }
+
+    fetch(`${base}data/library.json`)
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res.json();
+        })
+        .then(renderCards)
+        .catch(err => {
+            console.error("Failed to load library.json:", err);
+            grid.innerHTML = `<p class="text-meta">Failed to load library.</p>`;
+        });
+})();
+</script>

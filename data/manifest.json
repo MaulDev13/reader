@@ -1,46 +1,36 @@
 [
     {
-        "file": "cafe.csv",
-        "type": "csv",
-        "label": [
-            "Cafe"
-        ],
-        "password": "Cafe123"
-    },
-    {
-        "file": "kos.csv",
-        "type": "csv",
-        "label": [
-            "Kos"
-        ],
-        "password": "Kos123"
-    },
-    {
-        "file": "kos_clean (1).csv",
-        "type": "csv",
-        "label": [
-            "Kos",
-            "Clean",
-            "(1)"
-        ],
-        "password": null
-    },
-    {
-        "file": "kos_clean.csv",
-        "type": "csv",
-        "label": [
-            "Kos",
-            "Clean"
-        ],
-        "password": null
-    },
-    {
-        "file": "lainnya_notes.txt",
         "type": "txt",
+        "file": "lainnya_formatting-guide.txt",
         "label": [
             "Lainnya",
-            "Notes"
+            "Formatting",
+            "Guide"
         ],
-        "password": null
+        "title": "Lainnya Formatting Guide"
+    },
+    {
+        "type": "folder",
+        "folder": "reverend-insanity",
+        "index": "reverend-insanity/index.json",
+        "label": [
+            "Reverend",
+            "Insanity",
+            "Novel"
+        ],
+        "title": "Reverend Insanity",
+        "count": 2334
+    },
+    {
+        "type": "folder",
+        "folder": "shadow-slave",
+        "index": "shadow-slave/index.json",
+        "label": [
+            "Shadow",
+            "Slave",
+            "Novel"
+        ],
+        "title": "Shadow Slave",
+        "count": 3226
     }
 ]
