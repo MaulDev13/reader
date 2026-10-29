@@ -1,16 +1,16 @@
 // ======================================================
-// VIEWER (view-only)
+// VIEWER (view-only), driven by the hash router.
 //
-// Three states, chosen from globals set before the viewer
-// page is swapped in:
+// The router calls these entry points after the viewer page
+// fragment is swapped in:
 //
-//   window.__viewFile   -> a loose .txt file in /data
-//                          Rendered as a single document.
+//   viewerShowDoc(file)             -> a loose .txt document
+//   viewerShowBook(folder)          -> a book's chapter list
+//   viewerShowChapterNo(folder, n)  -> open chapter number n (loads index)
+//   viewerOpenChapterNo(folder, n)  -> open chapter n when already in-book
 //
-//   window.__viewFolder -> a folder (book) in /data
-//                          Loads <folder>/index.json and shows the
-//                          chapter list. Clicking a chapter renders
-//                          that chapter (title + content only).
+// Chapter URLs use the 1-based `chapter` number from index.json,
+// not the array position, so links stay stable if the list grows.
 //
 // Chapter files carry a front-matter block (--- ... ---). Only the
 // `title` is shown; the rest of the metadata is stripped.
@@ -21,37 +21,18 @@ let folderState = {
     folder: null,
     label: "",
     chapters: [],      // [{ file, chapter, title }]
-    lastReadIndex: null // index of the chapter last opened this session
+    lastReadIndex: null
 };
-
-// ======================================================
-// ENTRY POINT
-// ======================================================
-async function loadView() {
-    const folder = window.__viewFolder;
-    const file = window.__viewFile;
-
-    if (folder) {
-        await loadFolder(folder);
-        return;
-    }
-
-    if (file) {
-        await loadSingle(file);
-        return;
-    }
-
-    console.warn("Nothing selected to view.");
-}
 
 // ======================================================
 // SINGLE DOCUMENT (loose .txt)
 // ======================================================
-async function loadSingle(file) {
+async function viewerShowDoc(file) {
     try {
         const text = await fetchText(`${CONFIG.BASE_PATH}data/${file}`);
         showDoc();
         renderDoc(text);
+        window.scrollTo({ top: 0, behavior: "auto" });
     } catch (err) {
         console.error("Failed to read file:", err);
         showError("Failed to load document.");
@@ -61,33 +42,74 @@ async function loadSingle(file) {
 // ======================================================
 // FOLDER (book) — chapter list + chapter content
 // ======================================================
-async function loadFolder(folder) {
+
+// Load a folder's index into state (once), reusing it if already loaded.
+async function ensureFolderLoaded(folder) {
+    if (folderState.folder === folder && folderState.chapters.length) {
+        return folderState;
+    }
+    const index = await fetchJson(`${CONFIG.BASE_PATH}data/${folder}/index.json`);
+    const chapters = Array.isArray(index.chapters) ? index.chapters : [];
+    folderState = {
+        folder,
+        label: Array.isArray(index.label) ? index.label.join(" ") : folder,
+        chapters,
+        lastReadIndex: resolveSavedIndex(folder, chapters)
+    };
+    return folderState;
+}
+
+// Map a 1-based chapter number to its array index (fallback: position).
+function indexForChapterNo(chapters, chapterNo) {
+    let i = chapters.findIndex(ch => Number(ch.chapter) === Number(chapterNo));
+    if (i === -1 && chapterNo >= 1 && chapterNo <= chapters.length) {
+        i = chapterNo - 1; // fallback when `chapter` field is missing
+    }
+    return i;
+}
+
+// Show a book's chapter list.
+async function viewerShowBook(folder) {
     try {
-        const index = await fetchJson(`${CONFIG.BASE_PATH}data/${folder}/index.json`);
-        const chapters = Array.isArray(index.chapters) ? index.chapters : [];
-
-        folderState = {
-            folder,
-            label: Array.isArray(index.label) ? index.label.join(" ") : folder,
-            chapters,
-            lastReadIndex: resolveSavedIndex(folder, chapters)
-        };
-
-        // If asked to jump straight into a specific chapter (from the home
-        // "Continue reading" list), open it; otherwise show the list.
-        const jump = window.__viewChapterIndex;
-        window.__viewChapterIndex = null;
-
-        if (typeof jump === "number" && chapters[jump]) {
-            openChapter(jump);
-        } else {
-            renderChapterList();
-        }
+        await ensureFolderLoaded(folder);
+        renderChapterList();
     } catch (err) {
         console.error("Failed to read folder index:", err);
         showError("Failed to load chapter list.");
     }
 }
+
+// Load a folder (if needed) then open a chapter by its number.
+async function viewerShowChapterNo(folder, chapterNo) {
+    try {
+        await ensureFolderLoaded(folder);
+        viewerOpenChapterNo(folder, chapterNo);
+    } catch (err) {
+        console.error("Failed to read folder index:", err);
+        showError("Failed to load chapter.");
+    }
+}
+
+// Open a chapter by number assuming the folder is already loaded.
+function viewerOpenChapterNo(folder, chapterNo) {
+    if (folderState.folder !== folder) {
+        // Safety: state out of sync, reload via the full path.
+        viewerShowChapterNo(folder, chapterNo);
+        return;
+    }
+    const idx = indexForChapterNo(folderState.chapters, chapterNo);
+    if (idx === -1) {
+        showError("Chapter not found.");
+        return;
+    }
+    openChapter(idx);
+}
+
+// Expose entry points for the router.
+window.viewerShowDoc = viewerShowDoc;
+window.viewerShowBook = viewerShowBook;
+window.viewerShowChapterNo = viewerShowChapterNo;
+window.viewerOpenChapterNo = viewerOpenChapterNo;
 
 // Resolve the saved last-read chapter for a folder into a valid index.
 // Prefers the stored `index`, but re-validates against the current chapter
@@ -130,7 +152,7 @@ function renderChapterList() {
         const isLast = i === lastReadIndex;
         return `
         <li class="chapter-item">
-            <button type="button" class="chapter-link${isLast ? " is-last-read" : ""}" data-index="${i}">
+            <button type="button" class="chapter-link${isLast ? " is-last-read" : ""}" data-index="${i}" data-chapter-no="${chapterNoAt(i)}">
                 <span class="chapter-link__no">${ch.chapter != null ? ch.chapter : ""}</span>
                 <span class="chapter-link__title">${escapeHtml(stripSeriesPrefix(ch.title, label))}</span>
                 ${isLast ? `<span class="chapter-link__tag">reading</span>` : ""}
@@ -170,7 +192,7 @@ function renderChapterList() {
 
     const resumeBtn = document.getElementById("chapterResume");
     if (resumeBtn) {
-        resumeBtn.addEventListener("click", () => openChapter(lastReadIndex));
+        resumeBtn.addEventListener("click", () => goToChapterIndex(lastReadIndex));
     }
 
     const forgetBtn = document.getElementById("chapterForget");
@@ -186,7 +208,7 @@ function renderChapterList() {
     host.querySelectorAll(".chapter-link").forEach(btn => {
         btn.addEventListener("click", () => {
             const idx = Number(btn.dataset.index);
-            openChapter(idx);
+            goToChapterIndex(idx);
         });
     });
 
@@ -268,11 +290,37 @@ function renderChapter(idx, title, body) {
     host.querySelectorAll("[data-nav]").forEach(btn => {
         btn.addEventListener("click", () => {
             const action = btn.dataset.nav;
-            if (action === "prev" && hasPrev) openChapter(idx - 1);
-            else if (action === "next" && hasNext) openChapter(idx + 1);
-            else if (action === "list") renderChapterList();
+            if (action === "prev" && hasPrev) goToChapterIndex(idx - 1);
+            else if (action === "next" && hasNext) goToChapterIndex(idx + 1);
+            else if (action === "list") goToBook();
         });
     });
+}
+
+// ---- Navigation helpers: change the URL, router re-renders ----
+
+// The 1-based chapter number used in the URL for a given array index.
+function chapterNoAt(idx) {
+    const ch = folderState.chapters[idx];
+    if (!ch) return idx + 1;
+    return ch.chapter != null ? ch.chapter : idx + 1;
+}
+
+function goToChapterIndex(idx) {
+    if (idx < 0 || idx >= folderState.chapters.length) return;
+    if (window.Router) {
+        window.Router.goChapter(folderState.folder, chapterNoAt(idx));
+    } else {
+        openChapter(idx); // fallback if router unavailable
+    }
+}
+
+function goToBook() {
+    if (window.Router) {
+        window.Router.goBook(folderState.folder);
+    } else {
+        renderChapterList();
+    }
 }
 
 // ======================================================

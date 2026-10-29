@@ -155,7 +155,10 @@
 
                 card.querySelector(".continue-card__open").addEventListener("click", () => {
                     if (typeof window.openFolderAt === "function") {
-                        window.openFolderAt(entry.folder, entry.index);
+                        // Jump by chapter NUMBER (URL-based). Falls back to the
+                        // book's chapter list if the number is unknown.
+                        const no = (entry.chapter != null) ? Number(entry.chapter) : null;
+                        window.openFolderAt(entry.folder, no);
                     }
                 });
                 card.querySelector(".continue-card__remove").addEventListener("click", () => {

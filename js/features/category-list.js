@@ -54,31 +54,22 @@
     }
 
     function openTxt(item) {
-        window.__viewFile = item.file;
-        window.__viewFolder = null;
-
-        htmx.ajax("GET", "/pages/viewer.html", {
-            target: "#content",
-            swap: "innerHTML"
-        });
+        if (window.Router) window.Router.goDoc(item.file);
     }
 
     function openFolder(item) {
-        openFolderAt(item.folder, null);
+        if (window.Router) window.Router.goBook(item.folder);
     }
 
-    // Open a book folder, optionally jumping straight to a chapter index.
+    // Open a book folder, optionally jumping to a specific chapter NUMBER.
     // Exposed globally so the home "Continue reading" list can reuse it.
-    function openFolderAt(folder, chapterIndex) {
-        window.__viewFolder = folder;
-        window.__viewFile = null;
-        window.__viewChapterIndex =
-            typeof chapterIndex === "number" ? chapterIndex : null;
-
-        htmx.ajax("GET", "/pages/viewer.html", {
-            target: "#content",
-            swap: "innerHTML"
-        });
+    function openFolderAt(folder, chapterNo) {
+        if (!window.Router) return;
+        if (typeof chapterNo === "number" && !isNaN(chapterNo)) {
+            window.Router.goChapter(folder, chapterNo);
+        } else {
+            window.Router.goBook(folder);
+        }
     }
 
     /**

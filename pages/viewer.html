@@ -1,14 +1,8 @@
 <section class="page-stack">
 
-    <!-- TXT document, rendered as lightweight markup. -->
+    <!-- Document / chapter content. The hash router calls into viewer.js
+         (viewerShowDoc / viewerShowBook / viewerShowChapterNo) after this
+         fragment is swapped in, which fills #textView. -->
     <div id="textView" class="card"></div>
 
 </section>
-
-<script>
-(function () {
-    if (typeof loadView === "function") {
-        loadView();
-    }
-})();
-</script>

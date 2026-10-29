@@ -46,17 +46,14 @@
                 <p class="text-meta">Loading...</p>
             </div>
 
-            <section id="content"
-                hx-get="/pages/home.html"
-                hx-trigger="load"
-                hx-swap="innerHTML">
-            </section>
+            <!-- Initial + subsequent content is driven by the hash router. -->
+            <section id="content"></section>
 
         </main>
 
         <!-- FOOTER -->
         <footer style="text-align:center;">
-            <p class="text-meta">Architecture: HTMX</p>
+            <p class="text-meta">Architecture: HTMX + hash routing</p>
         </footer>
 
     </div>
@@ -74,5 +71,9 @@
     <script src="js/features/viewer.js"></script>
     <script src="js/features/category-list.js"></script>
     <script src="js/features/toggle-ui.js"></script>
+
+    <!-- Hash router loads last: it reads the viewer* globals the feature
+         scripts expose, then renders the initial route. -->
+    <script src="js/core/hash-router.js"></script>
 </body>
 </html>
